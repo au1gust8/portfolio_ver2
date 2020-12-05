@@ -1,0 +1,22 @@
+.thumbs-container .swiper-slide {
+	width: 145px;
+	text-align: left;
+}
+.thumbs-container img {
+	cursor:pointer;
+	width: 140px;
+	margin-right:5px;
+	border-radius:5px;
+}
+.news{position: relative;height:500px;background-image: linear-gradient(180deg,#f00,#f66);overflow: hidden}
+.news h3{color: #fff;float: left;padding:15px 0 0 15px;font-weight: bold;margin-bottom: 40px;font-size: 1.286em}
+.news .allbtn{position: absolute;top: 2%;right: 5%}
+.news .swiper-container{clear: both;overflow: hidden;width: 3000px}
+.news .swiper-wrapper{}
+.news .swiper-wrapper .swiper-slide{background: #fff;border-radius:20px;width: 200px;height: 350px;overflow: hidden;margin:4% 10px;float: left;position: relative}
+.news .swiper-wrapper .swiper-slide img{margin-bottom: 23px;width:200px;height: 150px}
+.news .swiper-wrapper .swiper-slide dl{padding: 0 10px}
+.news .swiper-wrapper .swiper-slide dl dt{margin-bottom: 20px;font-weight: bold;font-size:1.00em}
+.news .swiper-wrapper .swiper-slide dl dd{text-align: justify;line-height:1.5em;margin-bottom: 10px;font-size: 0.929em}
+.news .swiper-wrapper .swiper-slide a{margin:0 96px;border-radius:10px;border: 1px solid #ccc;padding: 0 3px;font-size: 1.3em;position: absolute;bottom: 10px} 
+.news .thumbs-container .swiper-slide {width: 200px;text-align: left;}

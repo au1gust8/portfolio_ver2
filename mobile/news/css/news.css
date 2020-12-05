@@ -1,0 +1,76 @@
+/*공통*/
+article{width: 98%;margin:0 auto}
+
+#title {width: 100%;margin:0 auto}
+
+#title .title_area {position: relative;margin-bottom: 100px}
+#title .title_area .linemap{position: absolute;top:-70px;left:30px}
+#title .title_area .linemap span{color: #666}
+#title .title_area h3{font-size:3.125em;text-align: center}
+#title .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+/*button*/
+#page_button {overflow: hidden;position: relative;padding: 5% 0 12%}
+#page_num {position: absolute;top:75%;width: 98%;margin:0 auto;text-align: center}
+#button {}
+#button a{display: block;padding: 8px;background: #fafafa;color: #333;border: 1px solid #753b3b;font-size: 1.25em;text-align: center;margin:0 auto 5px}
+#button .adminbtn{width: 318px;margin: 0px auto 15px auto;overflow: hidden}
+#button .modify,#button .delete{width: 138px;float: left;}
+#button .modify{margin-right: 5px}
+/* list css */
+#list_search {padding: 20px 0;display: flex;justify-content: center;align-items: center}
+#list_search1 {}
+#list_search2 {margin:-2px 5% 0 1%}
+#list_search2 select{border: 1px solid #999}
+#list_search3 {margin:-2px 1% 0 0}
+#list_search3 select{border:solid 1px #999;}
+#list_search3 select option{border: 1px solid #ccc;padding: 3px 0}
+#list_search4 {margin:-3px 1% 0 0}
+#list_search5 {margin: -3px 0 0}
+#list_search #list_search4 input {width:90px;height:18px;border:solid 1px #999;}
+#list_search5 input{background: #fff;border: 1px solid #999}
+#content form{margin-bottom: 50px}
+#list_top_title {overflow: hidden;border-bottom: 1px solid #ccc}
+#list_top_title li{}
+#list_top_title #list_title1{font-weight: bold;font-size: 2.0em;margin-bottom: 20px}
+#list_content{width: 100%}
+#list_item {overflow: hidden;margin:0 auto 10% auto;padding: 5px 0}
+#list_item1 {position: relative;margin-bottom:3%}
+#list_item1 span{display: none}
+#list_item1::after{display: block;content: '';background: #f00;width: 4px;height: 4px;border-radius: 50px;position: absolute;top: 0}
+#list_item1::before{display: block;content: '';background: #666;width: 90%;height: 1px;position: absolute;top: 0;left: 2%}
+#list_item2 {float: left;width: 100%}
+#list_item2 a{display: block;overflow: hidden}
+#list_item2 a p{font-size: 1.125em;font-weight: bold;margin:0 0 5% 5%;width: 85%;line-height: 1.3em}
+#list_item2 .thumimg{width:60px;height:60px;overflow: hidden;float: left;margin: 0 5%}
+#list_item2 .thumimg img{width: 100%}
+#list_item3 {float: left;margin:2% 1% 0 5%}
+#list_item4 {float: left;margin:2% 1% 0 0}
+#list_item5 {float: left;margin:2% 0 0}
+/*view css*/
+.visual_view{margin:15% auto 0;width: 100%;height: 150px;overflow: hidden}
+.visual_view img{width: 100%;}
+.title_area_view{margin-bottom:5%}
+.linemap_view{text-align: center;font-size: 0.8em}
+#content_view{}
+#view_subject{font-size: 1.6em;text-align: center;margin:5%;font-weight: bold}
+#view_option{text-align: right;font-size:0.9em;margin-bottom:8%}
+#view_content{line-height:1.5em;font-size: 1.125em;width:98%;margin: 0 auto;}
+#view_content img{width: 100%;height: 250px;margin-bottom: 50px}
+/*write_form css*/
+.content_write{width: 900px;overflow: hidden;margin: 0 auto}
+#title_write {width: 1200px;margin:350px auto 0 auto}
+#title_write .title_area{position: relative;margin-bottom: 100px}
+#title_write .title_area .linemap{position: absolute;top:-70px;left:30px}
+#title_write .title_area .linemap span{color: #666}
+#title_write .title_area h3{font-size:3.125em;text-align: center}
+#title_write .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+.write_line {border-bottom:solid 1px #ccc;}
+#write_form {}
+#write_form>div{overflow: hidden;font-size: 1.125em;margin: 15px 0}
+#write_form #write_row1 {height:30px; margin:5px 0}
+#write_form #write_row2 {height:30px; margin:5px 0}
+#write_form #write_row3 {height:250px; margin:5px 0}
+#write_form div .col1 {float:left;width:150px;text-align:center;padding:5px;background: #ebf4f6;border-radius: 15px;margin-right:30px}
+#write_form div .col2{float: left}
+#write_form div .col2 textarea{width: 650px; margin-top:1px;border:solid 1px #cccccc;}
+#write_form div .col2 input {width:650px;height:22px;border:solid 1px #cccccc;}

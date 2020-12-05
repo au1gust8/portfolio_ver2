@@ -1,0 +1,154 @@
+<?
+session_start();
+@extract($_GET);
+@extract($_POST);
+@extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>한국디자인진흥원-오시는 길</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e49f5d3028.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub1common.css">
+    <!--    본문 css 경로변경-->
+    <link rel="stylesheet" href="css/content1_4.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b1a5eb22d274a3d5f0be91de5b8f931c"></script>
+    <script src="js/map2.js"></script>
+    <!--[if IE9]>  
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+</head>
+
+<body>
+    <? include"../common/sub_head.html" ?>
+            <!-- 메인비주얼영역-->
+        <div class="visual"> <img src="common/images/mainvisualsub.jpg" alt=""> 
+        <h2>기관정보 및 사업정보</h2>
+        </div>
+        <!--서브네비영역-->
+        <div class="sub_nav_box">
+            
+            <div class="subnav">
+                <ul>
+                    <li><a id="nav1" href="sub1_1.html">인사말</a></li>
+                    <li><a id="nav2" href="sub1_2.html">기관역사</a></li>
+                    <li><a id="nav3" href="sub1_3.html">경영목표·비전</a></li>
+                    <li><a class="current" href="sub1_4.html">오시는 길</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--                본문컨텐츠영역-->
+        <article id="content">
+            <div class="title_area">
+                <div class="linemap"> <span>기관정보및사업정보</span>&gt;<strong>오시는 길</strong> </div>
+                <h3>오시는 길</h3> </div>
+            <!--                본문변경지점-->
+            <div id="map_KIDP"> </div> <address><span>주소</span> 13496 경기도 성남시 분당구 양현로 322 (야탑동 344-1) 한국디자인진흥원 <br><span>대표전화</span> 031-780-2114 (1층안내데스크)</address>
+            <div id="con">
+                <div>
+                    <p>버스</p>
+                    <p>분당차병원앞 하차</p>
+                    <table>
+                        <tr>
+                            <th>노선</th>
+                            <th>노선번호</th>
+                            <th>구분</th>
+                        </tr>
+                        <tr>
+                            <td>분당 ↔ 산성동</td>
+                            <td>2</td>
+                            <td>일반시내버스</td>
+                        </tr>
+                        <tr>
+                            <td>분당 ↔ 용인</td>
+                            <td>116</td>
+                            <td>일반시내버스</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p>야탑역 하차</p>
+                    <table>
+                        <tr>
+                            <th>노선</th>
+                            <th>노선번호</th>
+                            <th>구분</th>
+                        </tr>
+                        <tr>
+                            <td>야탑역 ↔ 성남시내</td>
+                            <td>3-1.76.8.8-1</td>
+                            <td>마을버스</td>
+                        </tr>
+                        <tr>
+                            <td>야탑역 ↔ 성남시내</td>
+                            <td>57.222.55.55-1.340-1.280.250.300</td>
+                            <td>일반시내버스</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p>성남터미널 하차</p>
+                    <table>
+                        <tr>
+                            <th>노선</th>
+                            <th>노선번호</th>
+                            <th>구분</th>
+                        </tr>
+                        <tr>
+                            <td>성남터미널 ↔ 부천</td>
+                            <td>8414</td>
+                            <td>시외버스(좌석)</td>
+                        </tr>
+                        <tr>
+                            <td>성남터미널 ↔ 안산</td>
+                            <td>8467</td>
+                            <td>시외버스(좌석)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p>주차요금 안내</p>
+                    <table>
+                        <tr>
+                            <th>구분</th>
+                            <th>요금</th>
+                            <th>비고</th>
+                        </tr>
+                        <tr>
+                            <td>30분</td>
+                            <td>1,000원</td>
+                            <td>정산소 징수 및 관리실 판매</td>
+                        </tr>
+                        <tr>
+                            <td>1시간</td>
+                            <td>2,000원</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>4시간</td>
+                            <td>8,000원</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>1일권</td>
+                            <td>20,000원</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+    
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/1.4scroll.js"></script>
+        <!--        푸터공통영역-->
+        <? include"../common/sub_foot.html" ?>
+</body>
+
+</html>

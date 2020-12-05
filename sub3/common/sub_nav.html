@@ -1,0 +1,52 @@
+<script>
+
+window.onload=function(){
+
+        var num = '<?=$_GET['num']?>';
+
+        var nav1= document.getElementById('nav1'); 
+
+        var nav2= document.getElementById('nav2');
+
+        var nav3= document.getElementById('nav3');
+
+        var nav4= document.getElementById('nav4');
+
+    
+
+          if(num==1){
+
+              nav1.className='current';
+
+          }else if(num==2){
+
+              nav2.className='current';
+
+          }else if(num==3){
+
+              nav3.className='current';
+
+          }else if(num==4){
+
+              nav4.className='current';
+
+          }
+
+}
+
+</script> 
+
+      <!--        메인비주얼영역-->
+        <div class="visual"> <img src="common/images/mainvisualsub.jpg" alt="">
+            <h2>통합디자인민원센터</h2> </div>
+        <!--            서브네비영역-->
+        <div class="sub_nav_box">
+            <div class="subnav">
+                <ul>
+                    <li><a id="nav1" href="sub3_1.html">고객서비스헌장</a></li>
+                    <li><a id="nav2" href="sub3_2.html">핵심서비스이행표준</a></li>
+                    <li><a id="nav3" href="sub3_3.html">고객응대서비스이행표준</a></li>
+                    <li><a id="nav4" href="../../inquiry/list.php">1:1문의</a></li>
+                </ul>
+            </div>
+        </div>

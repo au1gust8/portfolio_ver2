@@ -1,0 +1,15 @@
+/*첫depth의 공통 visual,headerArea*/
+/*메인비주얼영역*/
+.visual{width: 2000px;height: 300px;background: #333;position: relative;left: 50%;margin-top:200px; margin-left: -1000px;z-index: -1}
+.visual h2{position: absolute;z-index: 999;top: 45%;left: 42%;font-size: 40px;color: #fff;font-weight: normal}
+.visual .sub_nav_box{width: 1200px;margin: 0 auto;overflow: hidden}
+/*서브네비영역*/
+.sub_nav_box .subnav ul{overflow: hidden;width: 1000px;margin: auto}
+.sub_nav_box .subnav ul li{width: 33.333%;float: left;text-align:center}
+.sub_nav_box .subnav ul li a{font-size:24px;display: block;padding: 20px 0;}
+.sub_nav_box .subnav ul li a:hover{color: #f00;font-weight: bold;letter-spacing: -1px;transition: all .4s ease}
+.sub_nav_box .subnav ul li .current{color: #f00;font-weight: bold;letter-spacing: -1px}
+.sub_nav_box .subnav ul li .current::after{display: block;content: '';width: 5px;height: 5px;border-radius: 50px;background: #f00;margin: 10px 50%;opacity:1;}
+
+
+#footerArea{overflow: hidden; clear: both}

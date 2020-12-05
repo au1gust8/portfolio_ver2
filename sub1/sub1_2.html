@@ -1,0 +1,86 @@
+<?
+session_start();
+@extract($_GET);
+@extract($_POST);
+@extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>한국디자인진흥원-연혁</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e49f5d3028.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub1common.css">
+    <!--    본문 css 경로변경-->
+    <link rel="stylesheet" href="css/content1_2.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+    <!--[if IE9]>  
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <? include"../common/sub_head.html" ?>
+        <? $_GET['num']=2;
+      include "common/sub_nav.html"; 
+    ?>
+            <!--                본문컨텐츠영역-->
+            <article id="content">
+                <div class="title_area">
+                    <div class="linemap"> <span>기관정보및사업정보</span>&gt;<strong>기관역사</strong> </div>
+                    <h3>기관역사</h3> </div>
+                <!--                본문변경지점-->
+                <div class="content_area">
+                    <div class="his_twe sec1">
+                        <p>2020
+                            <br>/
+                            <br> 2000</p>
+                        <div class="line"></div>
+                        <ul>
+                            <li><span class="red">2018</span> 한-베 디자인센터 개소</li>
+                            <li><span>2015</span> 한국디자인이우센터 오픈
+                                <br>미래디자인융합센터(양산) 완공 및 입주</li>
+                            <li><span>2013</span> 고객가치경영 선포
+                                <br>한국디자인진흥원 중국사무소(KIDP China) 오픈</li>
+                            <li><span>2012</span> K-DESIGN 비전 선포식
+                                <br>제5차 산업디자인 진흥종합계획(2013~2017)</li>
+                            <li><span>2011</span> 제9차 경제정책조정회의
+                                <br>'디자인산업 육성 종합계획' 발표</li>
+                            <li><span>2010</span> 해외디자인 나눔사업 실시
+                                <br>(베트남, 말레이시아)</li>
+                            <li><span>2008</span> 제4차 산업디자인 진흥종합계획(2008~2012) 공고</li>
+                            <li><span>2007</span> 디자인나눔(사회공헌활동)시작</li>
+                            <li><span>2006</span> Design Korea
+                                <br>– 상하이 개최</li>
+                            <li><span class="red">2001</span> 세계산업디자인총회(ICSID) 개최
+                                <br>코리아디자인센터 준공 (한국디자인진흥원 이전)
+                                <br>한국디자인진흥원으로 출범 (산업디자인진흥법 개정)</li>
+                            <li><span>2000</span> 세계그래픽디자인대회(ICOGRADA) 개최</li>
+                        </ul>
+                    </div>
+                    <div class="his_nin sec2">
+                        <p>1999
+                            <br>/
+                            <br> 1970</p>
+                        <ul>
+                            <li>제1회 대한민국디자인진흥대회 개최 <span class="red">1999</span></li>
+                            <li>산업디자인진흥법 제정 <span>1997</span></li>
+                            <li>우수산업디자인(GD)상품 선정제 도입 <span>1985</span></li>
+                            <li>산업디자인포장진흥법 제정 <span>1977</span></li>
+                            <li>한국디자인포장센터 설립 <span>1970</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <script src="js/jquery-1.8.3.min.js"></script>
+            <script src="js/1.2scroll.js"></script>
+            <!--        푸터공통영역-->
+            <? include"../common/sub_foot.html" ?>
+                                        <div class="text">0</div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+/*본문컨텐츠영역*/
+#content {width: 1200px;margin: 0 auto;margin-top: 150px;margin-bottom: 185px}
+#content .title_area {position: relative}
+#content .title_area .linemap{position: absolute;top:-70px;left:30px}
+#content .title_area .linemap span{color: #666}
+#content .title_area h3{font-size:3.125em;text-align: center}
+#content .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+/*본문변경지점*/
+
+/**/
+#content .content{margin-top: 200px}
+#content div{margin-bottom: 150px}
+#content h4{border-bottom: 3px solid #f00;font-size:2.250em;margin-bottom: 50px;text-align: left;padding: 0 50px 20px 0;color: #999;line-height: 1.5em}
+#content h4 span{color: #333;font-weight: bold}
+
+#content dl{margin-bottom: 50px}
+#content dt{margin-bottom: 30px; font-size: 1.500em;font-weight: bold}
+#content dt::before{content: "|" ;padding-right: 10px}
+#content dd{margin-bottom: 20px;font-size: 1.125em;line-height: 1.5em;text-align: justify}
+
+/*scrollevent*/
+.con1,.con2,.con3{position: relative; right:0; top:-50px; opacity: 0;
+         transition: all .8s}
+    
+.boxMove{top:0; opacity: 1}
+
+
+.text{position: fixed; right:0; top: 0;
+           font-size: 50px; z-index: 100}

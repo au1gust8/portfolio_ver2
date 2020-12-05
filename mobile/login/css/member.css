@@ -1,0 +1,15 @@
+#memberForm{}
+#memberForm header{border-bottom: 1px solid #ccc;margin-bottom:60px;height: 200px}
+#memberForm .headerInner {width: 1200px; margin: 0 auto}
+#memberForm header h1{padding: 50px 0 0 0;text-indent: -999px;color: rgba(0,0,0,.0);}
+#memberForm header h1 a{display: block;background: url(../../common/images/main_logo.png) no-repeat;width: 270px;height: 47px}
+#login_form{border: 3px solid #f00;border-radius: 50px;width: 700px;padding: 60px;margin: 0 auto 100px auto}
+#id_pw_input{width: 635px;margin: 0 auto}
+#id_pw_input h2{margin-bottom: 70px;font-size: 2.5em}
+#id_pw_input ul{overflow: hidden;margin:50px 0}
+#id_pw_input ul li{float: left}
+#id_pw_input ul li:first-of-type{width: 160px;font-size: 1.325em}
+#id_pw_input input{background: rgba(120,155,255,.1);border: 0;padding: 7px;width:300px}
+
+.btn input{border: 0;background: #fff;font:100 1.350em;cursor: pointer}
+.btn a{font-size: 1.125em;display: block}

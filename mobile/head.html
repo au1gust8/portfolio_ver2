@@ -1,0 +1,57 @@
+ <div class="box"></div>
+<header id="headerArea">
+<div class="headerBox">
+<h1><a href="index.html"></a></h1>
+<a href="#" class="menuBtn menu-trigger"><span></span><span></span><span></span></a>
+<div id="nav">
+<nav id="gnb">
+<h2 class="hidden">글로벌네비게이션영역</h2>
+<ul class="mainMenu">
+    <li class="depth1"><a href="#"><span>▼</span> 기관정보 및 사업정보</a>
+        <ul>
+            <li><a href="sub1-1.html">인사말</a></li>
+            <li><a href="sub1-2.html">기관역사</a></li>
+            <li><a href="sub1-3.html">경영목표·비전</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 디자인의 사회적 가치</a>
+        <ul>
+            <li><a href="sub2-1.html">추진체계</a></li>
+            <li><a href="sub2-2.html">전략과제 및 추진활동</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 통합 디자인 민원센터</a>
+        <ul>
+            <li><a href="sub3-1.html">핵심서비스 이행표준</a></li>
+            <li><a href="news/list.php">KIDP Main News</a></li>
+        </ul>
+    </li>
+    <li class="depth1"><a href="#"><span>▼</span> 문화확산 및 해외시장</a>
+        <ul>
+            <li><a href="sub4-1.html">디자인전람회</a></li>
+            <li><a href="inquiry/list.php">1:1문의</a></li>
+        </ul>
+    </li>
+</ul>
+<!--<a class="mclose" href="#"></a>-->
+</nav>
+<ul class="join"> <?
+if(!$userid) 
+{
+?>
+<li><a href="login/login_form.php">로그인</a></li>
+<li><a href="member/join.html">회원가입</a></li>
+<?
+}
+else
+{
+?>
+<li><a href="login/logout.php">로그아웃</a></li>
+<li><a href="login/member_form_modify.php">정보수정</a></li>
+<?
+}
+?>
+</ul>
+</div>
+</div>
+</header>

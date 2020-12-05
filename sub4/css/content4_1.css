@@ -1,0 +1,88 @@
+/*본문컨텐츠영역*/
+#con {width: 1200px;margin: 0 auto;margin-top: 100px;margin-bottom: 185px;overflow: hidden}
+#con .title_area {position: relative}
+#con .title_area .linemap{position: absolute;top:-70px;left:30px}
+#con .title_area h3{font-size:3.125em;text-align: center;margin-bottom: 200px}
+#con .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+
+/*stickynav*/
+ .navOn{position: fixed; width: 100%;
+            z-index:10; left:0; top: 0}
+        
+.navBox{margin-bottom: 100px}
+        .navBox nav{width:1000px; margin: 0 auto}
+        .navBox ul{overflow: hidden}
+        .navBox ul li{float: left; width:20%;
+           text-align: center}
+        
+        .navBox ul li a{display: block; font-size: 2em; font-weight: bold;border-bottom: 1px solid #f00;background: #fff;
+        padding: 10px 0; color: #333; transition: all .8s}
+        
+/*        메뉴 활성화 scroll spy */
+        .navBox ul li a.spy{border-bottom: 1px solid #f00; color: #f00
+        }
+
+ #content>div{position: relative; right:0; top:-50px; opacity: 0;
+         transition: all .8s}
+    
+
+        
+        #content>div.boxMove{
+            top:0; opacity: 1 
+        }
+
+
+.text{position: fixed; right:0; top: 0;
+           font-size: 50px; z-index: 100}
+
+/*본문변경지점*/
+#content .sec1 h4{font-size: 2.525em;margin-bottom:150px}
+#content .sec1 ul{overflow: hidden;border-left: 1px solid #ccc;border-right: 1px solid #ccc;padding:0 50px;margin-bottom:150px}
+#content .sec1 ul li{margin-bottom: 30px;line-height: 2em}
+#content .sec1 ul li{text-align: right}
+#content .sec1 ul li{font-size: 1.375em;text-align: justify}
+#content .sec1 ul li{text-align: right}
+
+#content .sec2 h4{font-size: 2.000em;margin-bottom: 100px;border-bottom: 1px solid #ccc;padding-bottom: 30px}
+#content .sec2{margin-bottom: 200px}
+#content .sec2 dl{margin-bottom: 100px;overflow: hidden}
+#content .sec2 dl dt{font-size: 1.500em;font-weight: bold;margin-bottom:20px;width: 200px; height: 150px; float: left}
+#content .sec2 dl dd{font-size: 1.375em;text-align: justify;line-height:2em;width: 1000px;margin: 0 auto}
+
+
+#content h4{font-size: 2.000em;margin-bottom: 100px;border-bottom: 1px solid #ccc;padding-bottom: 30px}
+#content .sec3 ul{margin-bottom: 200px}
+#content .sec3 ul li{margin-bottom: 100px}
+#content .sec3 ul li .left{float: left;width: 400px}
+#content .sec3 ul li .left p{font-size:1.500em;color: #999;font-weight: bold }
+#content .sec3 ul li .left p span{color: #f00;line-height: 1.5em}
+#content .sec3 ul li .right{width: 800px;overflow: hidden}
+#content .sec3 ul li:nth-of-type(1) .right{height:552px}
+#content .sec3 ul li:nth-of-type(2) .right{height:261px}
+#content .sec3 ul li:nth-of-type(3) .right{height:358px}
+#content .sec3 ul li:nth-of-type(4) .right{height:261px}
+#content .sec3 ul li:nth-of-type(5) .right{height:261px}
+#content .sec3 ul li:nth-of-type(6) .right{height:261px}
+#content .sec3 ul li:nth-of-type(7) .right{height:455px}
+
+#content .sec3 ul li .right> dl{float: left;overflow: hidden;margin-bottom: 30px;border-bottom: 1px solid #ccc}
+#content .sec3 ul li .right> dl dt{float:left;margin-right: 50px;width:800px;height: 30px;font-weight: bold;font-size: 1.350em;}
+#content .sec3 ul li .right> dl dd{font-size: 1.250em;text-align: justify;line-height:2em;color: #666}
+
+#content .sec4 table{width: 1200px;margin-bottom: 150px}
+#content .sec4 table caption{font-size:2.000em;text-align: left;margin-bottom: 50px;}
+#content .sec4 table thead tr{background: #f5f5f5;border-collapse:collapse;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc}
+#content .sec4 table thead tr th{border-collapse:collapse;padding: 20px 0;font-size:  1.375em}
+#content .sec4 table tbody tr{border-bottom: 1px solid #ccc}
+#content .sec4 table tbody tr td {border-collapse:collapse;padding: 30px 50px;text-align: center}
+
+#content .sec5 ul{padding: 25px 0;border-top: 2px solid #707070;border-bottom: 1px solid #b5b5b5;height: 140px}
+#content .sec5 ul li{float: left;line-height: 105px;text-align: center;padding:20px 40px}
+#content .sec5 ul li:nth-child(1),#content ul:nth-of-type(3) li:nth-child(2){border-right: 1px dashed #c9c9c9}
+#content .sec5 ul li span{margin-right: 20px;color: #424242;font-size: 1.250em;font-weight: bold;margin-bottom:30px}
+#content .sec5 ul li img{max-width: 100%;max-height: 100%;border: 0 none;}
+
+
+
+
+

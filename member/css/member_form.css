@@ -1,0 +1,28 @@
+#content{width: 800px; margin:300px auto 100px auto}
+#content .formbox{width: 800px;border: 1px solid #ccc;margin: 30px 0;height: 40px}
+#content .astric{color: #f00}
+#content h2{margin-bottom: 30px;font-size: 3.125em}
+#content p{margin-bottom: 80px;font-size: 1.125em;}
+#content div ul{overflow: hidden;padding:10px 0;position: relative}
+#content div ul li{float: left;height:30px}
+#content div ul li:first-of-type{width: 200px;font-size: 1.325em;padding-left: 20px;position: relative}
+#content div ul li:first-of-type::after{content: '';display: block;background: #666;width: 1px;height: 15px;position: absolute;top: 0;right: 0;margin-right: 20px}
+#content div ul li:last-of-type{width: 340px}
+#content div ul li:last-of-type input{border: 0; width: 100%;font-size: 1.125em;margin-left: 20px}
+#content div ul li:last-of-type span{position: absolute;top:23%;right: 0%;width: 200px}
+
+#content .formbox .hp li:last-of-type select{margin-left: 25px}
+#content .formbox .hp li:last-of-type input{width: 80px}
+
+#content .formbox .email li:last-of-type input{width: 130px}
+/*input*/
+
+/*btn*/
+.button{margin:70px auto;width: 800px;height: 50px}
+.button a{display: block;width: 385px;float: left;text-align: center;padding:10px 0 ;font-weight: bold;float: left;font-size: 1.5em}
+
+.button .join{width: 383px;border: 1px solid #f00;margin-right:28px}
+.button .join:hover{background:#f00;transition: .1s ease-in;color: #fff}
+.button .cancel{background: #ccc;color: #fff}
+.button .cancel:hover{background: #fff;border: 1px solid #ccc;transition: .1s ease-in;color: #333;width:383px}
+

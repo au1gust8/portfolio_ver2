@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.faq{width:650px; border-bottom:1px solid #ddd;font-size:12px}  
+.faq .hgroup{position:relative;margin:0 0 10px 0;}  
+.faq .hgroup .all{position:absolute; top:5px; right:10px;
+       color:#333; text-decoration:none;}  
+.faq ul{margin:0;padding:0;list-style:none}  
+.faq .q{margin:0;border-top:1px solid #ddd;position: relative}  
+.faq .q span{display: block;width:20px;height:20px;border-radius: 15px;background: #666;font-size: 20px;color: #fff;position: absolute; top: 7px;right:0 }
+.faq .q a.trigger{display:block;padding:10px 15px;background:#fafafa;color:#333;text-align:left;text-decoration:none ;}  
+.faq .hide .q a.trigger{font-weight:normal;background:none}  
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{background:#feeddd;color:#000}  
+.faq .a{margin:0;padding:10px 15px;line-height:1.5;display: none} 
+
+
+
+
+
+
+
+
+

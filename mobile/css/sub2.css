@@ -1,0 +1,22 @@
+/*page1*/
+#content .sub1 .con0 li{font-size: 1.3em;text-align: center;line-height: 1.5em; text-align: center;margin-bottom:30px}
+#content .sub1 .con0 li dt dl{position: relative}
+#content .sub1 .con0 li dl dt{margin-bottom:20px}
+#content .sub1 .con0 li dl dt::after{display: block;content: '';background: #ccc;width:100px;height:1px;position: absolute;left:35%}
+#content .sub1 .con1 h4{font-size: 1.5em;text-align: center;margin-bottom:50px}
+#content .sub1 .con2 h4{font-size: 1.5em;text-align: center;margin-bottom:50px}
+#content .sub1 .con1 img{width: 100%;margin-bottom: 100px}
+#content .sub1 .con2{}
+#content .sub1 .con2 dl{margin-bottom:50px}
+#content .sub1 .con2 dl dt{margin-bottom:20px;border-bottom: 1px #ccc solid;line-height:1.7em;font-size: 1.5em}
+#content .sub1 .con2 dl dt span{font-size:1em;color: #c66}
+#content .sub1 .con2 dl dd{margin-bottom: 20px;font-size: 1.25em}
+/*page2*/
+#content .sub2 .content{margin-top: 200px}
+#content .sub2 div{margin-bottom: 150px}
+#content .sub2 h4{border-bottom: 2px solid #f00;font-size:1.50em;margin-bottom: 50px;text-align: left;color: #999;line-height: 1.5em}
+#content .sub2 h4 span{color: #333;font-weight: bold}
+
+#content .sub2 dl{margin-bottom: 50px}
+#content .sub2 dt{margin-bottom: 30px; font-size: 1.300em;font-weight: bold}
+#content .sub2 dd{margin-bottom: 20px;font-size: 1.125em;line-height: 1.7em;text-align: justify}

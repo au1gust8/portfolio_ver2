@@ -1,0 +1,53 @@
+<script>
+
+window.onload=function(){
+
+        var num = '<?=$_GET['num']?>';
+
+        var nav1= document.getElementById('nav1'); 
+
+        var nav2= document.getElementById('nav2');
+
+        var nav3= document.getElementById('nav3');
+
+        var nav4= document.getElementById('nav4');
+
+    
+
+          if(num==1){
+
+              nav1.className='current';
+
+          }else if(num==2){
+
+              nav2.className='current';
+
+          }else if(num==3){
+
+              nav3.className='current';
+
+          }else if(num==4){
+
+              nav4.className='current';
+
+          }
+
+}
+
+</script>   
+
+
+        <!--        메인비주얼영역-->
+        <div class="visual"> <img src="common/images/mainvisualsub.jpg" alt="">
+            <h2>디자인의 사회적가치</h2> </div>
+        <!--            서브네비영역-->
+        <div class="sub_nav_box">
+            <div class="subnav">
+                <ul>
+                    <li><a id="nav1" href="sub2_1.html">추진체계</a></li>
+                    <li><a id="nav2" href="sub2_2.html">사회적책임행동규범</a></li>
+                    <li><a id="nav3" href="sub2_3.html">전략과제및추진활동</a></li>
+                    <li><a id="nav4" href="sub2_4.html">윤리경영및인권경영</a></li>
+                </ul>
+            </div>
+        </div>

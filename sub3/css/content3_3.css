@@ -1,0 +1,36 @@
+/*본문컨텐츠영역*/
+#content {width: 1200px;margin: 0 auto;margin-top: 150px;margin-bottom: 185px}
+#content .title_area {position: relative}
+#content .title_area .linemap{position: absolute;top:-70px;left:30px}
+#content .title_area .linemap span{color: #666}
+#content .title_area h3{font-size:3.125em;text-align: center}
+#content .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+#content .title_area{margin-bottom: 200px}
+/*본문변경지점*/
+#content h4{font-size: 2.500em;margin-bottom: 50px}
+#content div{width:1200px;margin: 0 auto;position: relative;float: left}
+
+
+.cus1 dl{overflow: hidden;float: left;width: 230px;height: 500px; margin:0 10px 200px 10px;padding: 50px 20px 20px 20px;line-height: 2.5em;border-left: 1px solid #d5d5d5;border-top: 1px solid #d5d5d5}
+#content .cus1 dl:nth-of-type(3){position: absolute;top: 91px;right: 34px}
+#content .cus1 dl dt{margin:50px 0 40px 0;font-size: 2em;line-height:1.5em;font-weight: bold}
+#content .cus1 dl dd{margin-bottom: 30px;font-size: 1.425em;line-height: 1.5em;text-align: justify;color: #666}
+#content .cus1 img{position: absolute;top: 91px;right: 335px;}
+
+#content .cus2{margin: 0 auto}
+#content .cus2 dl{overflow: hidden;float: left;width: 230px;height: 500px;margin:0 10px 200px 10px;padding: 50px 20px 20px 20px;line-height: 2.5em;border-left: 1px solid #d5d5d5;border-top: 1px solid #d5d5d5}
+#content .cus2 dl:nth-of-type(1){margin-right: 300px;position: relative} 
+#content .cus2 dl dt{margin:50px 0 40px 0;font-size: 2em;line-height:1.5em;font-weight: bold}
+#content .cus2 dl dd{margin-bottom: 30px;font-size: 1.425em;line-height: 1.5em;text-align: justify;color: #666}
+#content .cus2 img{position: absolute;top: 91px;right: 630px;}
+
+#content .cus3{margin: 0 auto}
+#content .cus3 dl{overflow: hidden;float: left;width: 230px;height: 500px;margin:0 10px 200px 10px;padding: 50px 20px 20px 20px;line-height: 2.5em;border-left: 1px solid #d5d5d5;border-top: 1px solid #d5d5d5}
+#content .cus3 dl dt{margin:50px 0 40px 0;font-size: 1.6em;line-height:1.5em;font-weight: bold}
+#content .cus3 dl dd{margin-bottom: 30px;font-size: 1.425em;line-height: 1.5em;text-align: justify;color: #666}
+#content .cus3 img{position: absolute;top: 91px;right: 46px;}
+
+.cus1,.cus2,.cus3{position: relative;top: -50px;left: 0;opacity: 0;transition: all .8s}
+.boxMove{top: 0;opacity: 1}
+.text{position: fixed; right:0; top: 0;
+           font-size: 50px; z-index: 100}

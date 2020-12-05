@@ -1,0 +1,22 @@
+#home{margin:0 auto 100px}
+#home header{border-bottom: 1px solid #ccc;margin-bottom: 60px}
+#home header .headerInner {width: 1200px; margin: 0 auto}
+#home h1{margin: 20px 0;text-indent: -999px;color: rgba(0,0,0,.0);}
+#home h1 a{display: block; background: url(../../common/images/main_logo.png) no-repeat;width: 270px;height: 47px}
+.sub_cont_wrap{width: 1000px;margin:0 auto 100px}
+.member_tab{padding: 30px 0;border-top: 1px solid #333}
+.member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #aaa;}
+.member_tab a.on{color: #000;border-bottom: 2px solid #000;font-weight: bold}
+.member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #000;font-weight: bold}
+
+.join{text-align: left}
+.join h2{font-size: 2.7em;margin-bottom: 100px}
+.join h3{font-size:1.7em;margin-top: 30px}
+.join .policy{padding: 10px;overflow-y: scroll;height: 25px;margin: 15px 0;border: 1px solid #ccc;line-height: 2em}
+.join .check{margin-bottom:80px}
+.join .button{text-align: center;margin-top: 30px}
+.join .button .allcheck{display: block; width: 1000px;height: 24px; padding:10px 0;text-align: center;color: #fff;background: #999;font-weight: bold;font-size: 1.5em;margin-bottom: 15px}
+.join .button{overflow: hidden}
+.join .button .ok,.join .button button{display: inline-block;width: 490px;line-height: 24px;padding:10px 0;border: none;background: #f00;color: #fff;font-size:1.5em;cursor: pointer;font-weight: bold}
+.join .button .cancel{display: inline-block;line-height: 24px;padding: 8px 0;border: none;background: #ccc;color: #fff}
+.join .button .ok{margin-right:15px;float: left}

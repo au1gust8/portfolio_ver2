@@ -1,0 +1,16 @@
+/*본문컨텐츠영역*/
+#content {width: 1200px;margin: 0 auto;margin-top: 100px;margin-bottom: 185px}
+#content .title_area {position: relative}
+#content .title_area .linemap{position: absolute;top:-70px;left:30px}
+#content .title_area h3{font-size:3.125em;text-align: center;margin-bottom: 200px}
+#content .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+/*본문변경지점*/
+#content h4{font-size: 3.000em;margin-bottom: 50px;text-align: center}
+#content p{margin-bottom: 100px;font-size:1.320em;line-height:3em;color: #999;text-align: center;margin:130px 0 }
+#content p span{font-size:1.620em;font-weight: bold;color: #666}
+#content ul li{font-size: 1.250em;margin-bottom: 50px;text-align: justify;line-height: 2em}
+#content ul li:nth-last-child(1){margin:100px 0 150px 0;line-height: 2em}
+#content dl{margin-bottom:100px}
+#content dl dt{font-size: 1.50em;margin-bottom: 50px;color: #f00;font-weight: bold}
+#content dl dd{font-size: 1.250em;margin-bottom: 50px;text-align: justify;line-height: 2em}
+#content dl dd span{font-weight: bold}

@@ -1,0 +1,17 @@
+#headerArea {position: fixed;z-index: 1000;background: #fff;width: 100%;top: 0}
+/*메인비주얼영역*/
+.visual{width:100%;height:400px;background: #333;position: relative;left: 50%;margin-left: -50%;overflow: hidden;margin-top:160px}
+.visual img{width: 2000px;height: 630px}
+.visual h2{position: absolute;z-index: 999;top:38%;left:27%;font-size: 50px;color: #fff;line-height: 1.7em}
+.visual h2::after{display: block;content: '';width: 100%;height: 17px;    background: #f00;position: absolute;top: 55px;z-index: -1;}
+.visual .sub_nav_box{width: 1200px;margin: 0 auto;overflow: hidden}
+#article{width: 100%;overflow: hidden}
+/*서브네비영역*/
+nav{position: relative}
+nav ul{overflow: hidden;width: 1000px;height: 80px;margin: 0 auto;padding: 10px 0;}
+nav ul li{width:25%;float: left;text-align:center}
+nav ul li a{font-size:24px;display: block;padding: 20px 0;}
+nav ul li a:hover{color: #f00;letter-spacing: -1px;transition: all .4s ease}
+nav ul li .current{color: #f00;letter-spacing: -1px}
+nav ul li .current::after{display: block;content: '';width: 5px;height: 5px;border-radius: 50px;background: #f00;margin: 10px 50%;opacity:1}
+#calendarWrap{margin: 100px 0}

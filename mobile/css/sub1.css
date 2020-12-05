@@ -1,0 +1,32 @@
+/*page1*/
+#content .sub1 figure{background:url(../images/leader.jpg) no-repeat; width:250px; height:124px;margin: 0 auto 30px auto}
+@media screen and(-webkit-min-device-pixel-ratio:2){
+#content .sub1 figure{background: url(../images/leaderx2.jpg)no-repeat;background-size:250px; height: 124px;margin: 0 auto 10px auto}
+}
+#content .sub1 figcaption p{color: #999;text-align: center;position: absolute;bottom: -15%}
+#content .sub1 ul li{margin-bottom: 30px;line-height: 2em;text-align: justify;font-size: 1.125em;}
+/*page2*/
+#content .sub2 .history1{height:1300px;position:relative}
+#content .sub2 .history2{height:410px;position:relative}
+#content .sub2 div p{color: #f00;opacity:  0.3;position:absolute;left: 0;top: 0; font-size:7em;font-weight: bold}
+#content .sub2 .history2 p{color: #f00;opacity:  0.3;position:absolute;left:40%;top: 0; font-size:7em;font-weight: bold}
+#content .sub2 ul{position: absolute;top:5%;left: 40%}
+#content .sub2 .history2 ul{position: absolute;top:5%;left:0}
+#content .sub2 ul li{line-height: 2em;margin-bottom: 10px;font-size: 1.125em}
+#content .sub2 ul li span{color: #999; font-weight: bold}
+#content .sub2 ul li .red{color:#c33;font-weight: bold}
+/*page3*/
+#content .sub3{position: relative}
+#content .sub3 div{text-align: center;overflow: hidden;margin-bottom:10%}
+#content .sub3 div h4{position:relative;font-size:1.7em;text-align: center;margin-bottom:65px;color: #c33}
+#content .sub3 div h4::before{display:block;content:'';width:1px;height:35px;background:#999;position:absolute;top:160%;left:50%}
+#content .sub3 div p{font-size:1.2em;text-align: center;margin-bottom: 50px;line-height: 1.5em}
+#content .sub3 div ul{text-align: center;font-size:1.2em}
+#content .sub3 .goal ul li:nth-of-type(1){font-weight: bold;margin-bottom: 5px}
+#content .sub3 .goal ul li:nth-of-type(2){margin-bottom:50px}
+#content .sub3 .policy ul li{margin-bottom: 20px}
+#content .sub3 .value ul li{margin-bottom: 20px}
+#content .sub3 .strategy ul{margin-bottom:50px}
+#content .sub3 .strategy ul li:nth-of-type(1){font-weight: bold;margin-bottom: 20px}
+#content .sub3 .strategy ul li{margin-bottom: 20px;overflow: hidden;line-height: 1.5em}
+#content .sub3 .strategy ul li span{color: #c33}

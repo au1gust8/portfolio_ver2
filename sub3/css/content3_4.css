@@ -1,0 +1,26 @@
+/*본문컨텐츠영역*/
+#content {width: 1200px;margin: 0 auto;margin-top: 150px;margin-bottom: 185px}
+#content .title_area {position: relative}
+#content .title_area .linemap{position: absolute;top:-70px;left:30px}
+#content .title_area .linemap span{color: #666}
+#content .title_area h3{font-size:3.125em;text-align: center}
+#content .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+#content .title_area{margin-bottom: 200px}
+/*본문변경지점*/
+#content h4{font-size: 2.500em;margin-bottom: 50px}
+#content div{width:1200px;margin: 0 auto;position: relative;float: left}
+#content .content{width: 1200px;margin: 0 auto;height:3500px}
+/*inner안에 ul*12개 그 안에 li*2개 각각 h2와 li들*/
+#content .content ul{overflow: hidden;margin-bottom: 100px;float: left;margin:0 20px 0 0}
+#content .content ul:last-child{margin-right:0}
+#content .content ul li{width:1200px;height: 280px;margin: 0 auto 100px auto;overflow: hidden}
+#content .content ul li img{float: left;margin-right: 100px;height: 250px;width:300px }
+#content .content ul li p{float: left;font-size: 1.375em;color: #666;font-weight: bold;margin-top:20px}
+#content .content ul li dl{margin-top:80px;}
+#content .content ul li dl dt{font-size: 2.3em;margin-bottom: 30px}
+#content .content ul li dl dd{font-size: 1.375em;line-height: 2em}
+
+.content div{position: relative;top: -50px;left: 0;opacity: 0;transition: all .8s}
+.content div.boxMove{top: 0;opacity: 1}
+.text{position: fixed; right:0; top: 0;
+           font-size: 50px; z-index: 100}

@@ -1,0 +1,21 @@
+/*본문컨텐츠영역*/
+#content {width: 1200px;margin: 0 auto;margin-top: 150px;margin-bottom: 185px}
+#content .title_area {position: relative}
+#content .title_area .linemap{position: absolute;top:-70px;left:30px}
+#content .title_area .linemap span{color: #666}
+#content .title_area h3{font-size:3.125em;text-align: center;margin-bottom: 200px}
+#content .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+/*본문변경지점*/
+#content h4{font-size: 3.000em;margin-bottom: 50px}
+#content img{float: left;margin-right: 50px}
+
+#content div p{margin-bottom: 100px;font-size:1.375em;line-height:2em }
+#content div ul li{font-size: 1.250em;margin-bottom: 50px}
+#content div ul li:nth-last-child(1){margin:100px 0 150px 0;line-height: 2em}
+/*scrollevent*/
+.con{position: relative; right:0; top:-50px; opacity: 0;
+         transition: all .8s}
+    
+.boxMove{top:0; opacity: 1}
+
+

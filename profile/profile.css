@@ -1,0 +1,378 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Rubik', sans-serif,'Noto Sans KR', sans-serif;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu h1{
+    font-size: 2em;position: fixed;top: 4%; left: 5%;
+}
+#menu h1 span{font-size:26px}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	-webkit-border-radius: 20px;
+            border-radius: 20px;
+}
+#menu li.active{
+	background:#000;
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;font-weight: 600
+}
+#menu li.active a:hover{
+	color: #000;transition: ease-out 3s
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 15px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:3%;
+	right:5%;
+	height: 40px;
+	z-index: 70;
+	padding: 0;
+	margin:0;
+}
+.twitter-share-button{
+	position: fixed;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
+#download{
+	margin: 10px 0 0 0;
+	padding: 15px 10px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #49afcd;
+	background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from( #5bc0de),to( #2f96b4));
+	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: linear-gradient(top, #5bc0de, #2f96b4);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+	border-color: #2f96b4 #2f96b4 #1f6377;
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	vertical-align: middle;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+#download a{
+	text-decoration:none;
+	color:#fff;
+}
+#download:hover{
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	background-color: #2F96B4;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-ms-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+#infoMenu{
+	height: 20px;
+	color: #f2f2f2;
+	position:fixed;
+	z-index:70;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	font-size:0.9em;
+	padding:8px 0 8px 0;
+}
+#infoMenu ul{
+	padding: 0 40px;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 22px 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:underline;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
+}
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:638px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+    font-size: 3.5em;
+    font-family:'Rubik', sans-serif;
+    margin:0;padding:0;
+   position: absolute;top:18%;left: 5%
+}
+.section p{font-size: 2.7em;font-family:'Rubik', sans-serif;
+    margin:0;padding:0;
+   position: absolute;top:25.2%;left: 5%}
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,#section1,#section2,#section3,#section4,#section5,#section6,#section7,#slide1,#slide2{
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;position: relative;color: #333
+}
+.section figure{margin-top: 30px;position: absolute;top: 30%;left: 0;overflow: hidden;display: flex;
+flex: 1;display: -webkit-flex;display: flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center}
+.section figure div{width: 50%;}
+.section figure div img{width: 100%}
+.section figure figcaption{width:40%;padding: 0 5%;
+;flex: 1;display: -webkit-flex;display: flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center}
+.section figure figcaption p{text-align: left;margin-bottom:20px;font-size:3em}
+.section figure figcaption ul{}
+.section figure figcaption ul li{margin-bottom: 10px}
+.section figure figcaption ul li dl{overflow: hidden}
+.section figure figcaption ul li dl dt{margin-right: 10px;background:#000;border-radius: 30px;padding:8px 8px;color: #fff;width: 120px;font-size: 1.125em;float: left}
+.section figure figcaption ul li dl dd{text-align: left;line-height: 2em;margin-left: 150px;font-size: 1.125em}
+.section figure figcaption ul li a{display: block; width: 150px;height: 75px;background: url(./imgs/viewsite.png);text-indent: -999em;color: #fff;transition: all .4s;margin: 3% auto;}
+.section figure figcaption ul li a:hover{background: url(./imgs/viewsitehover.png)}
+#section1 .linkBtn{overflow: hidden}
+#section1 .linkBtn .git,#section1 .linkBtn .storyboad,#section1 .linkBtn .resume{float: left;margin-right: 10px}
+#section1 .git a{display: block; width: 150px;height: 75px;background: url(./imgs/github.png);text-indent: -999em;color: #fff;transition: all .4s;margin: 3% auto;}
+#section1 .git a:hover{background: url(./imgs/githubhover.png)}
+
+#section1 .storyboad a{display: block; width: 150px;height: 75px;background: url(./imgs/StoryBoard.png);text-indent: -999em;color: #fff;transition: all .4s;margin: 3% auto;}
+#section1 .storyboad a:hover{background: url(./imgs/StoryBoardhover.png)}
+
+#section1 .resume a{display: block; width: 150px;height: 75px;background: url(./imgs/Resume.png);text-indent: -999em;color: #fff;transition: all .4s;margin: 3% auto;}
+#section1 .resume a:hover{background: url(./imgs/Resumehover.png)}
+#section1 .linkBtn .git, #section1 .linkBtn .storyboad, #section1 .linkBtn .resume{float: left;margin: 20px auto 0 auto;width: 33.3333%}
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#section0{background: url(imgs/prf.png)no-repeat;background-position: center;background-size: cover}
+#section0 img{}
+#section0 .intro{position: relative;top: 20%;left: 5%}
+#section0 .intro h1{position: absolute;top: 0;left: 0;transform: translateY(-50%);text-align: left}
+#section0 .intro p{background: url(imgs/section0h1.png)no-repeat;background-position: right top;text-indent: -999em;color: #fff;position: absolute;top:0;left: 22%;z-index: 1;width: 200px;height: 100px}
+#section1 figure{top: 30%}
+#section1 figure div{width:30%}
+#section1 figure img{width:80%}
+#section1 figure figcaption{width:60%;padding: 0 5%}
+#section1 figure figcaption p{position:relative;top: 0;left: 0;margin-bottom:30px}
+#section1 figure figcaption dl{margin:0 10px 0 0}
+#section1 figure figcaption .linkBtn{width: 480px;margin: 5% auto 0 auto}
+
+#section2 figure div img{width: 75%}
+/*#section3 figure{top: 22%}*/
+/*#section3 figure figcaption{padding-top: 5%}*/
+#section3 figure div{width:43%}
+#section3 img{width:43%}
+#section5 img{width:85%}
+#section6 figcaption{width: 40%}
+#section6 figure img{width: 90%}
+#section7 div:nth-of-type(2){position: absolute;top:40%;left: 10%; width: 80%;margin: 0 auto}
+#section7 div:nth-of-type(2) ul{width: 50%;float: left}
+#section7 div:nth-of-type(2) ul li{text-align: center}
+#section7 .email a{background:url(imgs/email.png)no-repeat;width:82px;height: 41px }
+#section7 .hp a{background:url(imgs/hp.png)no-repeat;width:82px;height: 41px}
+#section7 .email li a,#section7 .hp li a{display: block;padding: 10px}
+
+/* Media query
+* --------------------------------------- */
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+#section0 .intro{position: relative;top: 48%;left: inherit}
+#section0 .intro h1{text-align: center;line-height: 2em;font-size:6.5em;color: #fff}
+#section0 .intro p{right: 5%;background-size: 120px;width: inherit}
+#menu{display:none;}
+h1{
+    font-size:1.8em;
+   position:inherit;top:10px;left: 0; text-align: center
+}
+.section p{font-size: 1.325em;
+   position: inherit;top: 20px;left: 0; text-align: center}
+.section figure{margin-top:0;position: inherit;top:3%; overflow: hidden;display: block}
+.section figure div{width:60%;margin:0 auto}
+.section figure div img{width:60%}
+.section figure figcaption{width:100%;padding: 0}
+.section figure figcaption p{text-align: left;margin-bottom:10px;font-size:1.5em}
+.section figure figcaption ul{}
+.section figure figcaption ul li{margin-bottom: 5px}
+.section figure figcaption ul li dl{overflow: hidden;width:100%}
+.section figure figcaption ul li dl dt{margin-right: 0;background:#000;border-radius: 30px;padding:3px 3px;color: #fff;width:100px;font-size: 14px;float:none;margin: 0 auto 5px auto}
+.section figure figcaption ul li dl dd{text-align: center;line-height: 1.5em;margin-left: 0;font-size:14px;}
+.section figure figcaption ul li a{
+    
+    display: block; width:inherit;height:inherit;background: #fff;text-indent:inherit;color: #333;transition:none;margin: 3% auto;padding: 3px 3px;border-radius:20px;border: 2px solid #000;font-weight:500
+    }
+.section figure figcaption ul li a:hover{;background: #000;text-indent:inherit;color: #fff;transition:none;margin: 3% auto;padding: 5px 5px;border-radius:20px;}
+#section1 figure{top: 0}
+#section1 figure p{text-align: center;font-size:1.375em;font-weight: bold}
+#section1 figure div{width:100%;margin-top: 20px}
+#section1 figure img{width:30%}
+#section1 figure figcaption{width:100%;padding: 0}
+#section1 figure figcaption p{position:relative;top: 0;left: 0;margin-bottom:20px}
+#section1 figure figcaption .linkBtn{width:fit-content;margin:0}
+#section1 figure figcaption .linkBtn li{float: left}
+#section1 .git a{display: block;background: url(./imgs/github.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0;border:0}
+#section1 .git a:hover{background:url(imgs/githubhover.png) no-repeat;background-size: 100px}
+#section1 .storyboad a{display: block;background: url(./imgs/StoryBoard.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0;border:0}
+#section1 .storyboad a:hover{background:url(imgs/StoryBoardhover.png) no-repeat;background-size: 100px}
+#section1 .resume a{display: block;background: url(./imgs/Resume.png) no-repeat;background-size:100px;text-indent: -999em;color: #fff;transition: all .4s;margin:0;border:0}
+#section1 .resume a:hover{background:url(imgs/Resumehover.png) no-repeat;background-size: 100px}
+
+#section2 figure div img{width: 65%}
+/*#section3 figure{top: 22%}*/
+/*#section3 figure figcaption{padding-top: 5%}*/
+#section3 figure div{width:40%}
+#section3 img{width:40%}
+#section4 img{width:80%}
+#section5 img{width:70%}
+#section6 figcaption{width:100%}
+#section6 figure img{width: 90%}
+#section7 div:nth-of-type(2){position: absolute;top:33%;left: 10%; width: 80%;margin: 0 auto}
+#section7 div:nth-of-type(2) ul{width:100%;float:none;margin-bottom: 10%}
+#section7 div:nth-of-type(2) ul li{width: 100px;margin:0 auto} 
+    #section7 div:nth-of-type(2) ul li a{font-size: 60px}
+#section7 .email a{background:none}
+#section7 .hp a{background:none}
+#section7 .email li a,#section7 .hp li a{display: block;padding: 10px}
+}
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}

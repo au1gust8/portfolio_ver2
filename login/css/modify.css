@@ -1,0 +1,29 @@
+article{margin-top: 300px}
+#form_join{width:800px;margin: 0 auto}
+#form_join h2{margin-bottom:30px;font-size: 3.125em}
+#form_join p{margin-bottom: 90px;font-size: 1.125em;}
+
+#form_join .astric{color: #f00}
+#form_join .formbox{width: 800px;border: 1px solid #ccc;margin: 30px 0;height: 40px}
+#form_join div ul{overflow: hidden;padding:10px 0;position: relative}
+#form_join div ul li{float: left;height:30px}
+#form_join div ul li:first-of-type{width: 200px;font-size: 1.325em;padding-left: 20px;position: relative}
+#form_join div ul li:first-of-type::after{content: '';display: block;background: #666;width: 1px;height: 15px;position: absolute;top: 0;right: 0;margin-right: 20px}
+#form_join div ul li:last-of-type{width: 340px}
+#form_join div ul li:last-of-type input{border: 0; width: 100%;font-size: 1.125em;margin-left: 20px}
+#form_join div ul li:last-of-type span{position: absolute;top:23%;right: 0%;width: 200px}
+
+#form_join .formbox .hp li:last-of-type select{margin-left: 25px}
+#form_join .formbox .hp li:last-of-type input{width: 80px}
+#form_join .formbox .email li:last-of-type input{width: 130px}
+
+#form_join .formbox:nth-of-type(1) ul li:last-of-type,#form_join .formbox:nth-of-type(4) ul li:last-of-type{margin-left: 20px}
+/*btn*/
+#button{margin:100px auto 120px;width: 800px;height: 50px}
+#button a{display: block;width: 385px;float: left;text-align: center;padding:10px 0 ;font-weight: bold;float: left;font-size: 1.5em}
+
+#button .save{width: 383px;border: 1px solid #f00;margin-right:28px}
+#button .save:hover{background:#f00;transition: .1s ease-in;color: #fff}
+#button .cancel{background: #ccc;color: #fff}
+#button .cancel:hover{background: #fff;border: 1px solid #ccc;transition: .1s ease-in;color: #333;width:383px}
+

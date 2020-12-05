@@ -1,0 +1,51 @@
+<script>
+
+window.onload=function(){
+
+        var num = '<?=$_GET['num']?>';
+
+        var nav1= document.getElementById('nav1'); 
+
+        var nav2= document.getElementById('nav2');
+
+        var nav3= document.getElementById('nav3');
+
+        var nav4= document.getElementById('nav4');
+
+    
+
+          if(num==1){
+
+              nav1.className='current';
+
+          }else if(num==2){
+
+              nav2.className='current';
+
+          }else if(num==3){
+
+              nav3.className='current';
+
+          }else if(num==4){
+
+              nav4.className='current';
+
+          }
+
+}
+
+</script>   
+    <!--        메인비주얼영역-->
+        <div class="visual"> <img src="common/images/mainvisualsub.jpg" alt="">
+            <h2>문화확산 및 해외시장</h2> </div>
+        <!--            서브네비영역-->
+        <div class="sub_nav_box">
+            <div class="subnav">
+                <ul>
+                    <li><a id="nav1" href="sub4_1.html">대한민국디자인전람회</a></li>
+                    <li><a id="nav2" href="sub4_2.html">한국청소년디자인전람회</a></li>
+                     <li><a id="nav3" href="sub4_3.html">디자인코리아</a></li>
+                    <li><a id="nav4" href="../../news/list.php">KIDP MAIN NEWS</a></li>
+                </ul>
+            </div>
+        </div>

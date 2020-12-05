@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{margin: 0 ; padding: 0}
+        ol,ul{list-style: none}
+        a{color: #333; text-decoration: none}
+        
+        #wrap{width:1000px; margin: 0 auto;
+              overflow: hidden}
+        header{height:150px; background: #0f0;position: fixed;width: 100%;left: 0;top: 0}
+        .visual{height: 200px; background: orange;margin-top: 150px}
+        
+        .navBox{ background: #ccc} 
+/*        상단에 고정된 sticky menu*/
+        .navOn{position: fixed; width: 100%;
+            z-index:10; left:0; top: 0}
+        
+        
+        .navBox nav{width:1000px; margin: 0 auto}
+        .navBox ul{overflow: hidden}
+        .navBox ul li{float: left; width:20%;
+           text-align: center}
+        
+        .navBox ul li a{display: block; font-size: 2em; font-weight: bold; background: #ccc;
+        padding: 10px 0; color: #333; transition: all .8s}
+        
+/*        메뉴 활성화 scroll spy */
+        .navBox ul li a.spy{
+           background: #333; color: #f00
+        }
+        
+        
+        
+        
+        #content div{position: relative; right:-1000px; top:0; opacity: 0;
+         transition: all .8s}
+         
+        #content .sec1{height: 500px; background: #f00}
+        #content .sec2{height: 600px; background: #0f0}
+        #content .sec3{height: 800px; background: #00f}
+        #content .sec4{height: 600px; background: pink}
+        #content .sec5{height: 800px; background: pink}
+        
+/*        scroll animation의 목적/최종값*/
+        #content div.boxMove{
+            right:0; opacity: 1 
+        }
+        
+
+        footer{height: 150px; background: #999}
+        
+        .text{position: fixed; right:0; top: 0;
+           font-size: 50px; z-index: 100}
+    </style>
+    <script src="../sub4/js/jquery-1.8.3.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        
+        $('.subNav li:eq(0)').find('a').addClass('spy');
+        //첫번째 서브메뉴 활성화 첫번째 li에 자식a찾아 spy클래스준다
+        
+        $('#content div:eq(0)').addClass('boxMove');
+        //첫번째 내용글 애니메이션 처리
+        
+        var stickyMenuH= $('.visual').height();
+        var h1= $('#content div:eq(1)').offset().top-500;
+        var h2= $('#content div:eq(2)').offset().top-500;
+        var h3= $('#content div:eq(3)').offset().top-500;
+        var h4= $('#content div:eq(4)').offset().top-500;
+        
+         
+         //스크롤의 좌표가 변하면.. 스크롤 이벤트
+        $(window).on('scroll',function(){
+            var scroll = $(window).scrollTop();
+           
+            //스크롤top의 좌표를 담는다
+
+            $('.text').text(scroll);
+            //스크롤 좌표의 값을 찍는다.
+            
+            
+            //sticky menu
+            if(scroll>stickyMenuH){ 
+                $('.navBox').addClass('navOn');
+                $('header').hide();
+                //스크롤의 거리가 350px 이상이면 서브메뉴 고정
+            }else{
+                $('.navBox').removeClass('navOn');
+                $('header').show();
+                //스크롤의 거리가 350px 보다 작으면 서브메뉴 원래 상태로
+            }
+            
+            
+            
+            $('.subNav li').find('a').removeClass('spy');
+            //모든 서브메뉴 비활성화~ 불꺼!!!
+            
+            
+            //스크롤의 거리의 범위를 처리
+            if(scroll>=0 && scroll<h1){
+                $('.subNav li:eq(0)').find('a').addClass('spy');
+                //첫번째 서브메뉴 활성화
+                
+                $('#content div:eq(0)').addClass('boxMove');
+                //첫번째 내용 콘텐츠 애니메이
+            }else if(scroll>=h1 && scroll<h2){
+                $('.subNav li:eq(1)').find('a').addClass('spy');
+                //두번째 서브메뉴 활성화
+                
+                 $('#content div:eq(1)').addClass('boxMove');
+            }else if(scroll>=h2 && scroll<h3){
+                $('.subNav li:eq(2)').find('a').addClass('spy');
+                //세번째 서브메뉴 활성화
+                
+                 $('#content div:eq(2)').addClass('boxMove');
+            }else if(scroll>=h3){
+                $('.subNav li:eq(3)').find('a').addClass('spy');
+                //네번째 서브메뉴 활성화
+                
+                 $('#content div:eq(3)').addClass('boxMove');
+            }else if(scroll>=h4){
+                $('.subNav li:eq(4)').find('a').addClass('spy');
+                //네번째 서브메뉴 활성화
+                
+                 $('#content div:eq(4)').addClass('boxMove');
+            }
+            
+        });
+
+
+    });
+    </script>
+</head>
+<body>
+   <div id="wrap">
+       <header>
+           헤더영역
+       </header>
+       <div class="visual">
+           메인 비주얼영역
+       </div>
+       <div class="container">
+        <div class="navBox">
+         <div class="subNav">
+            <ul>
+                <li><a href="#">MENU01</a></li>
+                <li><a href="#">MENU02</a></li>
+                <li><a href="#">MENU03</a></li>
+                <li><a href="#">MENU04</a></li>
+                <li><a href="#">MENU05</a></li>
+            </ul> 
+         </div>   
+        </div> 
+        <article id="content">
+            <div class="sec1">본문1</div>
+            <div class="sec2">본문2</div>
+            <div class="sec3">본문3</div>
+            <div class="sec4">본문4</div>
+            <div class="sec5">본문5</div>
+        </article>    
+       </div>
+       <footer>
+           푸터영역
+       </footer>
+   </div> 
+   
+   <div class="text">0</div>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

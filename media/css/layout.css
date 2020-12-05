@@ -1,0 +1,267 @@
+/* 와이드 pc  */
+#wrap{overflow: hidden}
+	
+.videoBox{width:100%;height: 100%;position: absolute;overflow:hidden;}
+#videoBG {
+   position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+  
+}
+
+#imgBG{
+	position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:none
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -90px; bottom: 20%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}	
+	
+
+#content{margin:0 auto}
+/*about*/
+#content .about{margin-bottom: 100px}
+#content .about ul{overflow: hidden}
+#content .about ul li:nth-of-type(1){width: 50%;float: left}
+#content .about ul li:nth-of-type(2){}
+#content .about ul li img{width: 100%; margin:0 20px 0 0}
+#content .about ul li dl{overflow: hidden;margin-top:75px;padding: 0 3%}
+#content .about ul li dl dt{font-size: 2.5em;line-height: 2em; margin-bottom: 10px;font-family: 'Nothing You Could Do', cursive;color: #369}
+#content .about ul li dl dd{font-size: 1.25em;line-height: 2em}
+#content .about li{font-size: 1.25em;line-height: 2em}
+#content .about li dl{overflow: hidden;margin-top:75px;padding: 0 3%}
+#content .about li dl dt{font-size: 2em;line-height: 2em; margin-bottom: 10px;font-family: 'Nothing You Could Do', cursive;color: #369}
+#content .about li dl dd{line-height: 2em}
+/*trailer*/
+#content .trailer{overflow: hidden}
+#content .trailer ul{float: left;}
+#content .trailer dl{margin: 0 5%}
+#content .trailer dl dt{font-size: 1.325em;font-weight: bold;margin-bottom: 20px;position: relative}
+#content .trailer dl dt::after{content: '';display: block;width: 390px;height: 8px;background: rgba(51 ,102, 119,.3);position: absolute;top: 14px}
+#content .trailer dl dd{font-size: 1.2em;line-height: 2em}
+/*.tra_con1,3*/
+#content .trailer .tra_con1 li:nth-of-type(1),#content .trailer .tra_con3 li:nth-of-type(1){float: left;width: 60%}
+#content .trailer .tra_con1 li:nth-of-type(1) img,#content .trailer .tra_con3 li:nth-of-type(1) img{width: 100%}
+#content .trailer .tra_con1 li:nth-of-type(2),#content .trailer .tra_con3 li:nth-of-type(2){padding: 2% 0;margin-left: 65%}
+/*.tra_con2*/
+#content .trailer .tra_con2 li:nth-of-type(2){margin-left:35%;width: 60%}
+#content .trailer .tra_con2 li:nth-of-type(1){padding: 2% 0;float: left;width: 28%;}
+/*character*/
+#content .character{overflow: hidden;margin-bottom: 150px}
+#content .character .con{overflow: hidden}
+#content .character .con ul{float: left;width: 33.33333%;overflow: hidden}
+#content .character .con ul li:nth-of-type(1){margin-bottom: 50px}
+#content .character .con ul li:nth-of-type(1) img{width: 100%}
+#content .character .con ul li:nth-of-type(2){padding: 0 16%;font-size:1.2em;line-height:2em}
+#content .character .con ul li:nth-of-type(2) span{margin-bottom: 30px;text-align: right;font-weight: bold;color: #369;border-bottom: 2px solid #997}
+
+#content .hch{margin-bottom: 100px;display: flex ;flex-flow: row wrap;align-content:space-between;}
+#content .hch figure{width: 33.333%}
+#content .hch figure div{margin-bottom: 50px;width: 100%}
+#content .hch figure div img{}
+#content .hch figure figcaption{}
+#content .hch figure figcaption dl{padding: 0 7%}
+#content .hch figure figcaption dl dt{margin-bottom: 30px;font-size: 2em;font-weight: bold;font-family: 'Nothing You Could Do'}
+#content .hch figure figcaption dl dd{font-size: 1.2em;line-height: 2em}
+/*gallery*/
+#content .gallery{margin-bottom: 150px}
+#content .gallery div{width: 1280px;margin: 0 auto;height: 900px;display: flex;flex-wrap: nowrap}
+#content .gallery .gal li{position: relative;float: left}
+#content .gallery div .gal_left{width: 590px}
+#content .gallery div .gal_left li{float: left;}
+#content .gallery div .gal_left .left1 div{width:590px;height:400px}
+#content .gallery div .gal_left .left2 div{width:235px;height:500px}
+#content .gallery div .gal_left .left3 div{width:355px;height:500px}
+#content .gallery div .gal_center{width: 380px}
+#content .gallery div .gal_center li{float: left;}
+#content .gallery div .gal_center .center1 div{width:380px;height:592px}
+#content .gallery div .gal_center .center2 div{width:380px;height:308px}
+
+#content .gallery div .gal_right{width: 310px}
+#content .gallery div .gal_right li{float: left;}
+#content .gallery div .gal_right .right1 div{width:310px;height:400px}
+#content .gallery div .gal_right .right2 div{width:310px;height:500px}
+
+.gal li{overflow: hidden}
+.gal li figure.item{}
+.gal li figure.item img{width: 100%}
+.gal li figure.item div{position:absolute;top: 0;left: 0}
+.gal li figure.item:hover div{background: rgba(255,255,255,.3);transition: all .3s ease}
+.gal li figure.item:hover img{transform: scale(1.1);transition: all .3s ease-out}
+.gal li figure.item figcaption{;position: absolute;bottom: 10%;right: 10%; opacity: 0; transition: all .5s}
+.gal li figure.item figcaption a{display: block;}
+.gal li figure.item figcaption p{font-size: 1.5em;color: #ff6;font-weight: bold;}
+.gal li:hover figure.item figcaption{opacity: 1}
+
+/* feature film 영역 */
+.feature .inWrap {position: relative;margin:0 0 150px 0}
+
+.feature .fInner {margin: 0 auto;	width: 85%;overflow: hidden;padding-bottom: 1%;}
+
+.feature li {float: left; width:320px; height: 301px;	margin-bottom: 4em; list-style: none}
+
+.feature li a {	position: relative;	display: block; height: 100%; margin: 0 3%;text-align: center;
+}
+.feature li span {	display: block;	position: absolute;	bottom: -5em;	width: 100%;    color:#333;	font-size: 1em;	font-weight: 400;}
+
+.feature li:nth-child(1) a{	background: url(../images/al1.png) center center no-repeat;	background-size: cover;}
+.feature li:nth-child(2) a{background:url(../images/al2.png) center center no-repeat;	background-size: cover;}
+.feature li:nth-child(3) a{	background: url(../images/al3.png) center center no-repeat;	background-size: cover;}
+.feature li:nth-child(4) a{	background: url(../images/al4.png) center center no-repeat;	background-size: cover;}
+.feature li:nth-child(5) a{	background:url(../images/al5.png) center center no-repeat;	background-size: cover;}
+.feature li:nth-child(6) a{	background: url(../images/al6.png) center center no-repeat;	background-size: cover;}
+.feature li:nth-child(7) a{	background: url(../images/al7.png) center center no-repeat;	background-size: cover;}
+.feature li:nth-child(8) a{	background: url(../images/al8.png) center center no-repeat;
+	background-size: cover;}
+.feature li:nth-child(9) a{	background: url(../images/al9.png) center center no-repeat;	background-size: cover;
+}
+.feature .swiper-pagination {position: relative;
+	margin-top:80px;}
+.feature .swiper-pagination-progress .swiper-pagination-progressbar{background: rgba(21, 80,122, 1);}
+
+.feature .button div {position: absolute;
+	width: 60px;height: 60px;background: rgba(21, 80, 122, 1);color: #fff;border-radius: 50%;text-align: center;top: 50%;box-shadow: 2px 2px 5px gray;transition: all 0.2s}
+.feature .button div:active {transform:translate(2px,2px);}
+.feature .button a {display: block;
+	height: 100%;}
+
+.feature .back a {background: url(../images/back.svg) center center no-repeat;
+	background-size: 30px 30px; text-indent: -999px; overflow: hidden;}
+
+.feature .next a {background:url(../images/next.svg) center center no-repeat;
+	background-size: 30px 30px;text-indent: -999px; overflow: hidden;}
+
+.feature .back {left: 1%;}
+.feature .next {right: 1%;}
+ 
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	#content{margin:0 auto}
+#content .hch figure div{margin-bottom: 50px;width:90%}
+#content .hch figure div img{width: 100%}
+.feature .swiper-pagination {position: relative;
+	margin-top:80px;}
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content{width: 100%}
+	#content div{margin:0 auto 100px auto}
+    #content .about{}
+    #content .about ul li:nth-of-type(1){width:100%;float: none}
+    #content .about ul li:nth-of-type(2){}
+    #content .about ul li:nth-of-type(1) img{width: 100%;float: none}
+    #content .about ul li dl{overflow: hidden;margin-top:85px;margin: 0 5%; padding: 0 }
+    #content .about ul li dl dt{font-size: 2.5em;line-height: 2em; margin-bottom: 10px;font-family: 'Nothing You Could Do', cursive;color: #369}
+    #content .about ul li dl dd{font-size: 1.25em;line-height: 2em}
+    /*character*/
+    #content .character{overflow: hidden;margin-bottom: 150px}
+    #content .character .con{overflow: hidden}
+    #content .character .con ul{float:none;width:100%;overflow: hidden}
+    #content .character .con ul li:nth-of-type(1){margin-bottom: 50px}
+    #content .character .con ul li:nth-of-type(1) img{width: 100%}
+    #content .character .con ul li:nth-of-type(2){margin: 0 ;font-size:1.2em;line-height:2em;width:auto}
+    #content .character .con ul li:nth-of-type(2) span{margin-bottom: 30px;text-align: right;font-weight: bold;color: #369;border-bottom: 2px solid #997}
+    #content .gallery div .gal_right .right1 div {width: 500px}
+    #content .gallery div .gal_right .right2 div {width: 500px}
+    
+    #content .gallery{width: 100%}
+/*    #content .gallery div .gal .item div{width: 308px;height: 308px}*/
+    #content .gallery div{margin: 0 auto;display: flex;flex-direction: row;height: 680px}
+    #content .gallery .gal li img{width:100%}
+    #content .gallery .gal{width: 340px;display: flex;flex-direction: column}
+    #content .gallery div .gal_left,#content .gallery div .gal_center,#content .gallery div .gal_right {
+    width: 340px;}
+    #content .gallery .gal_left .left2{display: none}
+    #content .feature .swiper-pagination {position: relative;margin-top:80px;}
+    
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content .about ul li dl{overflow: hidden;margin-top:85px;margin: 0 5%; padding: 0 }
+    #content .trailer .tra_con1 li:nth-of-type(1),#content .trailer .tra_con3 li:nth-of-type(1){width: 100%}
+    #content .trailer .tra_con2 li:nth-of-type(2){margin-left:0;width: 100%}
+    #content .trailer .tra_con1 li:nth-of-type(2),#content .trailer .tra_con3 li:nth-of-type(2),#content .trailer .tra_con2 li:nth-of-type(1){display: none}
+    #content .trailer .tra_con2 li:nth-of-type(2){margin: 0}
+    #content .trailer ul{height: auto}
+    #content .trailer ul li img{width: 100%}
+    #content .gallery{width: 100%}
+    #content .gallery div{width: 95%;margin:0 auto}
+    #content .gallery div .gal_left{display: none}
+    #content .gallery div .gal_center, #content .gallery div .gal_right{width: 50%}
+    .feature .button div{width: 40px;height: 40px;}
+	.feature .button div a {background-size: 20px 20px;}
+    
+#content .hch figure{width:50%;margin-bottom: 100px}
+#content .hch figure div{margin-bottom: 50px;width: 100%}
+#content .hch figure div img{width: 100%}
+#content .feature .swiper-pagination {position: relative;margin-top:80px;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #content{width: 100%}
+    #content .about{}
+    #content .about ul li:nth-of-type(1){width:100%;float: none}
+    #content .about ul li:nth-of-type(2){}
+    #content .about ul li:nth-of-type(1) img{width: 100%;float: none}
+    #content .about ul li dl{overflow: hidden;margin-top:85px;margin: 0 5%; padding: 0 }
+    #content .about ul li dl dt{font-size: 2.5em;line-height: 2em; margin-bottom: 10px;font-family: 'Nothing You Could Do', cursive;color: #369}
+    #content .about ul li dl dd{font-size: 1.25em;line-height: 2em}
+    
+    #content .trailer .tra_con1 li:nth-of-type(2),#content .trailer .tra_con3 li:nth-of-type(2),#content .trailer .tra_con2 li:nth-of-type(1){display: none}
+    #content .trailer .tra_con2 li:nth-of-type(2){margin: 0}
+    #content .trailer ul{height: auto}
+    #content .trailer ul li img{width: 100%}
+	#content .character .con ul{width:100%;float:none}
+    #content .character .con ul li img{width:100%;margin: 0 auto}
+    #content .character .con ul li:nth-of-type(1){width:100%;margin-bottom: 0;margin: 0 auto}
+    #content .character .con ul li:nth-of-type(2){display: none}
+   #content .gallery{width: 100%;margin-bottom:5px}
+/*    #content .gallery div .gal .item div{width: 308px;height: 308px}*/
+    #content .gallery .gal_left{display: none}
+    #content .gallery div .gal_center, #content .gallery div .gal_right {
+    width: 50%;}
+    #content .gallery div{width:93%}
+    #content .gallery .gal{float: left;width:100%}
+    #content .gallery .gal li{width: 300px;height: 300px;overflow: hidden;background:#aaa89c}
+    #content .gallery .gal li img{width:100%}
+    #content .gallery .gal li figure {height: 100%;}
+    
+    #content .hch figure{width:100%}
+#content .hch figure div{margin-bottom: 0;width: 100%}
+#content .hch figure div img{width: 100%}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+    .feature .fInner {width: 95%;}
+	.feature li {width: 140px; height: 210px;}
+	.feature li span {font-size: 1.1667em;}
+	.feature .button {display: none;}
+	
+}
+
+

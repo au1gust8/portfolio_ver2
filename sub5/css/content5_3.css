@@ -1,0 +1,45 @@
+/*본문컨텐츠영역*/
+#content {width: 1200px;margin: 0 auto;margin-top: 100px;margin-bottom: 185px}
+#content .title_area {position: relative}
+#content .title_area .linemap{position: absolute;top:-70px;left:30px}
+#content .title_area h3{font-size:3.125em;text-align: center;margin-bottom: 200px}
+#content .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+/*본문변경지점*/
+.tabs h3{overflow: hidden}
+.tabs h3 a{float: left;font-size:1.6em;margin-left: 280px}
+.tabs h3 a:hover{transition: all .4s ease;color: #f00}
+/*.tabs h3 .tab1::after{content: '|';margin-left: 40px;color: #333}*/
+.tabs {position:relative;width:1200px;} 
+
+
+.tabs .tab {display:block; width:350px; position:absolute;font-weight: bold; text-align: center;
+         padding: 10px 0;} 
+
+.tabs .tab1{left:0; top:0}
+.tabs .tab2{left:350px; top:0}
+
+.tabs h4{margin:100px auto;font-size: 2.3em;width: 443px}
+.tabs .hgroup a{display: block; margin-bottom: 50px}
+.tabs .on{color: #f00}
+.tabs .on::after{display: block;content: '';width: 5px;height: 5px;border-radius: 50px;margin: 5% 50%;background: #f00;opacity:1}
+.tabs h3 a::after{display: block;content: '';width: 5px;height: 5px;border-radius: 50px;margin:10px 50%;background: #f00;opacity:0}
+
+.tabs .contlist { margin-top:50px; display: none;
+    padding:15px;line-height:1.5em;} 
+
+
+.tabs .contlist ul li{font-size: 1.370em;line-height: 2em;margin-bottom: 40px;text-align: justify}
+.tabs .faq ul li{font-size: 1.370em;line-height: 2em;margin-bottom: 40px;text-align: justify;border-bottom: 1px solid #ccc;padding: 20px 20px
+}
+
+
+.tabs .faq .hgroup{position: relative}
+
+
+.tabs .faq ul .article .a{padding-bottom:10px; margin-top:0px; margin-bottom:0px; height:72px; overflow:hidden;padding-top:10px}
+
+
+.tabs .faq ul li .q .trigger{font-size: 1.370em;font-weight: bold;margin-bottom: 20px}
+.tabs .contlist .faq ul li .a{font-size: 1.250em;line-height: 2em;background: #fafafa;padding: 30px 30px;height: 50px}
+
+.tabs .faq p{line-height: 2em;margin-top: 50px}

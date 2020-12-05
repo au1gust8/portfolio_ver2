@@ -1,0 +1,58 @@
+/* CSS Document */
+
+/*main visual*/
+.main{}
+.main .maingallery{}
+.main .maingallery div{}
+.main .maingallery div ul li{position: relative;}
+.main .maingallery div ul li img{width: 100%}
+.main .maingallery div p{position: absolute;top:40%;left: 12%;font-weight: bold;color: #fff;font-size: 1.2em;line-height: 1.5em}
+.main .maingallery div p .red{background: #f00}
+.main .maingallery div p span{font-weight: bold}
+
+
+/*본문영역*/
+/*news*/
+
+
+#content .news{position: relative;height:700px;overflow: hidden}
+#content .news h3{color: #333;float: left;padding:130px 0 0 15px;font-weight: bold;margin-bottom: 40px;font-size: 1.4em}
+#content .news .allbtn{position: absolute;top: 15%;right: 5%}
+#content .news div{clear: both;overflow: hidden;width: 100%;margin-top: 100px}
+#content .news ul{padding-left: 0px;padding-right: 10px;width: 3000px;height: 400px;transition-duration: 0s;transform: translate3d(0px, 0px, 0px);overflow: hidden}
+#content .news ul .swiper-slide{width: 210px;height: 410px;float: left;position: relative;left: 10px;overflow: hidden;}
+#content .news ul .swiper-slide a{display: block;background: #fff;border-radius:20px; width: 200px;height: 400px; overflow: hidden;border: 1px solid #ccc}
+
+#content .news ul li img{margin-bottom: 23px;width:200px;height: 150px}
+#content .news ul li dl{padding: 0 10px; }
+#content .news ul li dl dt{margin-bottom: 20px;font-weight: bold;font-size:1.00em;line-height:1.5em}
+#content .news ul li dl dd{text-align: justify;line-height:1.7em;margin-bottom: 10px;font-size: 0.929em}
+#content .news ul li span{margin:0 91px;border-radius:10px;border: 1px solid #ccc;padding: 0 3px;font-size: 1.3em;position: absolute;bottom: 15px} 
+
+
+/*bus,val*/
+#content .busval{overflow: hidden;position: relative;height:600px;margin:100px 10px 0}
+#content .busval>ul{width: 50%}
+#content .busval ul li a div{position: absolute;width: 120px}
+#content .busval ul li a div h3{color: #f00;margin-bottom:5px;font-weight: bold}
+#content .busval ul li a div p{color: #f00}
+#content .busval ul li a img{width:100%}
+
+#content .busval .bus{position: absolute;left: 0;top: 0}
+#content .busval .bus li div{bottom: 0;right: -112px; border: 1px solid #f00;padding: 20px 13px;margin-left:-210px}
+#content .busval .bus li img{}
+
+#content .busval .val{position: absolute;left: 50%;top: 50%;}
+#content .busval .val li div{top:0; border: 1px solid #f00;padding: 20px 13px;margin-left:-110px}
+#content .busval .val li img{}
+/*schedule*/
+#content .sche{position: relative;overflow: hidden;}
+#content .sche h3{font-size: 1.4em;text-align: center;font-weight: bold;margin:10% 0}
+#content .sche ul{overflow: hidden}
+#content .sche li{overflow: hidden;float: left;width: 25%;position: relative;}
+
+#content .sche p{text-align:left;height:50px;margin: 15% 35%;font-size: 1.2em}
+#content .sche p span{color: #f00}
+#content .sche ul li img{width: 100%}
+#content .sche ul li p{position: absolute;top: 50%;margin-left: 31%; color: #fff;font-weight: bold;font-size: 1.286em}
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+<title>기관역사</title>
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<!--<link rel="stylesheet" href="css/sub1.css">-->
+<link rel="stylesheet" href="css/common.css">    
+<link rel="stylesheet" href="css/sub1.css">    
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<script src="js/prefixfree.min.js"></script>
+<script>
+// <![CDATA[
+try {
+    window.addEventListener('load', function () {
+        setTimeout(scrollTo, 0, 0, 1);
+    }, false);
+}
+catch (e) {}
+// ]]>
+</script>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/nav_new.js"></script>
+<!--[if lt IE 9]> 
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+ <? include "head.html"?>
+<div id="skipNav"><a href="#content">본문바로가기</a><a href="#gnb">네비게이션바로가기</a> </div>
+
+<div class="visual visual1">
+<h2>기관 및 사업 정보</h2>
+</div>
+<div class="sub_nav_box">
+ <div class="subnav sub1nav">
+    <ul>
+        <li><a id="nav1" href="sub1-1.html">인사말</a></li>
+        <li><a id="nav2" href="sub1-2.html" class="current">기관역사</a></li>
+        <li><a id="nav3" href="sub1-3.html">경영목표</a></li>
+    </ul>
+</div>
+</div>      
+            
+<article id="content"> 
+<div class="sub2">             
+<h2>기관역사</h2>
+<div class="history1"><p>2020<br>&#47;<br>2000</p>
+<ul>
+    <li><span class="red">2018</span><br> 한-베 디자인센터 개소</li>
+    <li><span>2015</span><br> 한국디자인이우센터 오픈
+        <br>미래디자인융합센터<br>완공 및 입주</li>
+    <li><span>2013</span><br> 고객가치경영 선포
+        <br>한국디자인진흥원<br> 중국사무소(KIDP China) 오픈</li>
+    <li><span>2012</span><br> K-DESIGN 비전 선포식
+        <br>제5차 산업디자인<br> 진흥종합계획(2013~2017)</li>
+    <li><span>2011</span><br> 제9차 경제정책조정회의
+        <br>'디자인산업 육성 종합계획' 발표</li>
+    <li><span>2010</span><br> 해외디자인 나눔사업 실시
+        <br>(베트남, 말레이시아)</li>
+    <li><span>2008</span><br> 제4차 산업디자인 진흥종합계획 공고</li>
+    <li><span>2007</span><br> 디자인나눔(사회공헌활동)시작</li>
+    <li><span>2006</span><br> Design Korea
+        <br>– 상하이 개최</li>
+    <li><span class="red">2001</span><br> 세계산업디자인총회(ICSID) 개최
+        <br>코리아디자인센터 준공<br> (한국디자인진흥원 이전)
+        <br>한국디자인진흥원으로 출범<br> (산업디자인진흥법 개정)</li>
+    <li><span>2000</span><br> 세계그래픽디자인대회(ICOGRADA) 개최</li>
+</ul>
+</div>
+ <div class="history2">
+<ul>
+    <li><span class="red">1999</span><br>제1회 대한민국디자인진흥대회 개최 </li>
+    <li><span>1997</span><br>산업디자인진흥법 제정 </li>
+    <li><span>1985</span><br>우수산업디자인(GD)상품 선정제 도입 </li>
+    <li><span>1977</span><br>산업디자인포장진흥법 제정 </li>
+    <li><span>1970</span><br>한국디자인포장센터 설립 </li>
+</ul>
+<p>1999<br>&#47;<br>1970</p>
+</div>
+   </div>
+    </article>
+<? include "foot.html" ?>
+
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var swiper = new Swiper('.swiper-container', {
+                autoHeight: true
+                , speed: 500
+                , onSlideChangeStart: function () {
+                    $(".tabs .active").removeClass('active');
+                    $(".tabs a").eq(swiper.activeIndex).addClass('active');
+                }
+            });
+            $(".tabs a").on('touchstart mousedown', function (e) {
+                e.preventDefault();
+                $(".tabs .active").removeClass('active');
+                $(this).addClass('active');
+                //swiper.swipeTo($(this).index());					
+                swiper.slideTo($(this).index());
+            });
+            $(".tabs a").click(function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

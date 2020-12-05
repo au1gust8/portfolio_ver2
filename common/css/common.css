@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/* CSS Reset */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a
+abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,
+strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {margin: 0;padding: 0;border: 0;font-size: 100%}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block}
+
+body {font-family: 'Nanum Gothic',"나눔스퀘어","돋움", Dotum, "굴림", Gulim, sans-serif, "나눔고딕";font-size: 14px;color: #333}
+
+ol,ul {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+address {
+    font-style: normal
+}
+
+a {
+    color: #333;
+    text-decoration: none
+}
+
+img {
+    border: 0;
+    vertical-align: top
+}
+
+.hidden {
+    position: absolute;
+    left: -1000%;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff
+}
+
+#skipNav {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10
+}
+
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+}
+
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+    height: auto;
+    padding: 10px 0;
+    background: #f2f2f2;
+}
+
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+
+#contentArea #bus  .turn {
+    font-size: 14px;
+    font-style: normal
+}
+
+
+/*헤더공통영역*/
+
+#wrap {width: 100%;overflow: hidden}
+#headerArea {position: fixed;z-index: 1000; background: #fff;width: 100%}
+#headerArea .header_inner {height: 200px; width: 1200px; margin: 0 auto; }
+#headerArea .logo{float: left;  background: url(../images/main_logo.png) no-repeat;width:270px;height: 47px; text-indent: -999px; overflow: hidden;margin: 50px 736px 50px 50px}
+#headerArea .logo a{display: block;width: 270px;height: 47px}
+
+#headerArea .header_inner > div:nth-of-type(1) ul a{ margin: 0 10px}
+#headerArea .header_inner > div:nth-of-type(1) ul{float: left;overflow: hidden; margin: 60px 0 0 -70px;}
+#headerArea .header_inner > div:nth-of-type(1) ul li{float: left;}
+#headerArea .header_inner > div:nth-of-type(1) ul li:nth-child(2)::before{content: '|';display: block; width: 1px; height: 15px; float: left}
+
+
+.header_inner > div:nth-of-type(1){overflow: hidden}
+/*공통gnb영역*/
+#headerArea #header .dropdownmenu .menu h3{font-size: 1.375em;width: 225px;padding:5px 0 30px 0;text-align: center}
+#headerArea #header .dropdownmenu .menu ul li{font-size: 1.250em;text-align: center;padding: 20px;color: #666}
+
+#headerArea{border-bottom: 1px solid #ccc}
+/*꽉차게*/
+#header{left:18%; top:120px;width:1200px; height:100px; margin:0 auto; padding-left:30px;text-align:left}
+		
+	
+/*(이미지+공간) + float*/
+
+.visual{}
+
+/*nav*/
+.dropdownmenu .menu{float: left;}
+.dropdownmenu .menu ul{display: none;}
+.dropdownmenu .menu ul li{color:#666}
+.dropdownmenu .menu ul li:hover{color: #333;font-weight: bold;transition: all .3s ease}
+/*주요사업일정*/
+#headerArea #header .dropdownmenu .m5 ul .marginb{padding-bottom: 10px}
+#headerArea #header .dropdownmenu .m5 ul .news2 a{display: block;padding: 10px;background: #f00;color: #fff}
+
+/*공통slidemove*/
+.topMove{display:block; width: 50px;
+               height: 50px; background: #f00; border-radius: 25px;
+             position: fixed; left:50%; margin-left: 650px; 
+               bottom:100px;}
+.topMove span{font-size: 20px;color: #fff;display: block;text-align: center;margin-top:12px}
+        
+
+
+/*푸터공통영역*/
+
+#footerArea {
+    overflow: hidden;
+    background: #fff;
+    height: 458px;
+    color: #666;
+    line-height: 1.5em;
+    font-style: normal;
+    clear: both;
+    border-top: 1px solid #ccc
+}
+
+#footerArea .footer_inner {
+    width: 1200px;
+    margin: 0 auto; overflow: hidden
+}
+#footerArea .footer_top{overflow: hidden}
+#footerArea .footer_top img{float: left; margin: 80px 0 50px 0}
+#footerArea .footer_top ul{float: right; overflow: hidden; margin:80px 60px 50px 0}
+#footerArea .footer_top li{float:left; margin-right: 20px}
+#footerArea .footer_top i{color: #666; font-size: 30px; }
+
+#footerArea .footer_bottom{}
+#footerArea .footer_bottom_left{float: left;height: 50px;margin-right: 80px}
+#footerArea  a{color: #666}
+#footerArea  li{line-height: 2em}
+#footerArea .copy{float: left;margin-top: 130px}
+
+.select01,.select02,.select03{width:150px; height:30px; background:#fafafa; border:1px solid #ccc;
+    position:relative;margin:0 50px 50px;float: left;margin-right: 30px}
+.select01 .arrow01,.select02 .arrow02,.select03 .arrow03{ display:block; font-size:1em;padding-top:5px;text-align: center}
+.select01 .arrow01,.select02 .arrow02,.select03 .arrow03:hover{color:#666}
+.select01 .aList01,.select02 .aList02,.select03 .aList03{ position:absolute; top:25px; left:-1px; width:150px; border:1px solid #ccc; display:none}
+.select01 .aList01 li,.select02 .aList02 li,.select03 .aList03 li{ line-height:1.5em; border-bottom:1px solid #ccc;}
+.select01 .aList01 li a,.select02 .aList02 li a,.select03 .aList03 li a{display:block;padding-left:20px}
+.select01 .aList01 li a,.select02 .aList02 li a,.select03 .aList03 li a:hover{ background:#F0F0F0; color:#666}
+
+select, input[type=button], input[type=submit], input[type=reset]{-webkit-appearance:none;}
+

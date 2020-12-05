@@ -1,0 +1,31 @@
+#content {width: 1200px;margin: 0 auto;margin-top: 150px;margin-bottom: 185px}
+#content .title_area {position: relative}
+#content .title_area .linemap{position: absolute;top:-70px;left:30px}
+#content .title_area .linemap span{color: #666}
+#content .title_area h3{font-size:3.125em;text-align: center;margin-bottom: 150px}
+#content .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+
+/**/
+#con.boxMove{top:0; opacity: 1}
+#map_KIDP.boxMove{top:0; opacity: 1}
+
+
+.text{position: fixed; right:0; top: 0;
+           font-size: 50px; z-index: 100}
+
+#con,#map_KIDP{position: relative; right:0; top:-50px; opacity: 0;transition: all .8s}
+/**/
+#content address{font-size: 18px;line-height: 2em;margin-bottom: 100px}
+#content address span{color: #666;}
+#content address span::after{padding-left:10px; content:"|";font-weight: bold}
+
+#map_KIDP{width:1200px; height: 600px;border: 1px solid #ccc;margin:0 auto 30px auto}
+
+#content table,th, td { border:1px solid #ddd;
+border-collapse:collapse;
+font-size:20px;
+font-family:'나눔고딕';
+padding:10px;width: 1200px;margin-bottom: 50px;padding: 20px}
+#content th {background:#ccc}
+
+#content p{font-size: 22px;margin-bottom: 20px;font-weight: bold}

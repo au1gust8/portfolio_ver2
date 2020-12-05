@@ -1,0 +1,169 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name='keywords' content='한국디자인진흥원,디자인사업안내'> 
+    <meta name='description' content='국내 유일의 국가주도 디자인산업 진흥을 위한 정부 기관'>
+
+    <title>한국디자인진흥원</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="maincss/main.css">
+    <script src="mainjs/mainpopup.js"></script>
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/e49f5d3028.js" crossorigin="anonymous"></script>
+    <script src="mainjs/jquery-1.7.1.min.js"></script>
+    <script src="mainjs/maincontent.js"></script>
+    <!--[if IE9]>  
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <? include "common/main_head.html" ?>
+    <!--        visual-->
+    <div class="visual_box">
+        <div class="visual">
+            <div class="gallery">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/mainvisual.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/mainvisual02.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/mainvisual03.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/mainvisual04.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="gallery_text">
+            <ul>
+                <li><span class="red">Design Driven Innovation</span>
+                    <br> 국민행복과 산업성장을 선도하는
+                    <br><span>글로벌 디자인 혁신 기관</span></li>
+                <li><span class="red">Design Driven Innovation</span>
+                    <br> 디자인글로벌
+                    <br><span>신시장을 창출하다</span></li>
+                <li><span class="red">Design Driven Innovation</span>
+                    <br> 디자인씽킹으로
+                    <br><span>혁신하다</span></li>
+                <li><span class="red">Design Driven Innovation</span>
+                    <br> 디자인산업의 4차 산업혁명
+                    <br><span>미래를 준비하다</span></li>
+            </ul>
+        </div>
+        <div class="dock"> <span class="mbutton btn1"></span> <span class="mbutton btn2"></span> <span class="mbutton btn3"></span> <span class="mbutton btn4"></span> <span class="ps"></span> </div>
+    </div>
+    <!--maincon-->
+    <article id="contentArea">
+        <h2 class="hidden">본문컨텐츠영역</h2>
+        <div id="main" class="main">
+            <div class="main_box">
+                <h3>KIDP Main News</h3>
+                <p>한국디자인진흥원의 주요소식을 전달합니다.</p>
+            </div>
+
+            <div class="gallery_box">
+                <a href="#left" class="leftBtn button">&lt;</a>
+                <a href="#right" class="rightBtn button">&gt;</a>
+                <? include "lib/func2.php" ?>
+                <!--                         최근게시물 시작부분-->
+                <div class="main_box_inner">
+                    <ul>
+                        <? latest_article2("news", 9, 20, 40) ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--            bus-->
+        <div id="bus" class="bus">
+            <a href="sub4/sub4_1.html">
+                <div>
+                    <h3><span>kidp</span> business</h3>
+                    <p>한국디자인전람회 바로가기</p>
+                </div>
+            </a>
+            <div> <img src="images/business.jpg" alt="#"> </div>
+        </div>
+        <!--            val-->
+        <div id="val" class="val">
+            <a href="sub2/sub2_2.html">
+                <div>
+                    <h3>KIDP <br><span>Social value</span></h3>
+                    <p>사회적책임 행동규범 바로가기</p>
+                </div>
+            </a>
+            <div> <img src="images/value.jpg" alt="KIDP Social value of design"> </div>
+        </div>
+        <!--            sche-->
+        <div id="sche" class="sche">
+            <div class="sche_box_inner">
+                <h3>KIDP 2020 Schedule</h3>
+                <p>디자인 공공기관의 주요사업 일정을 제공합니다.</p>
+                <p>Global Design Innovation Institution Leading <span> National Happiness</span> and <span>Industrial Growth</span>.</p>
+            </div>
+            <div class="sche_box">
+                <div class="sche_box_inner">
+                    <ul>
+                        <li><a href="public/fullcalendar/daygrid-views.html" title="2020디자인 공공기관 주요사업일정"><span>2020</span><br>KIDP 사업안내<br>바로가기<span class="ease_in_out"> →</span></a>
+                            <!--<a href="adsub/adsub.html" target="_blank" title="2020디자인 공공기관 주요사업일정이 새 창에 열림"><span>2020</span><br>KIDP 주요일정<br>바로가기<span> →</span></a>-->
+                        </li>
+                        <li> <img src="images/gdc.jpg" alt=""> <a href="http://www.gdc.or.kr/" target="_blank" title="광주디자인진흥원이 새 창에 열림">광주디자인센터<br><span>GDC</span></a> </li>
+                        <li> <img src="images/dgdc.jpg" alt=""> <a href="https://ds.dgdc.or.kr/" target="_blank" title="대구경북디자인진흥원이 새 창에 열림">대구경북디자인센터<br><span>DGDC</span></a> </li>
+                        <li> <img src="images/dcb.jpg" alt=""> <a href="http://www.dcb.or.kr/main/" target="_blank" title="부산디자인진흥원이 새 창에 열림">부산디자인센터<br><span>DCB</span></a> </li>
+                        <li> <img src="images/kidp.jpg" alt=""> <a href="http://www.seouldesign.or.kr/main" target="_blank" title="서울디자인재단이 새 창에 열림">서울디자인재단<br><span>Seoul Design</span></a> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </article>
+    <? include "common/main_foot.html" ?>
+    <!--          이위치에 추가되는 스크립트를 연결하세요-->
+    <script src="common/js/jquery-1.12.4.min.js"></script>
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="common/js/gnb.js"></script>
+    <script src="common/js/slide_move.js"></script>
+    <script src="mainjs/jquery-1.7.2.min.js"></script>
+    <script src="mainjs/move.js"></script>
+    <script src="mainjs/scrollevent.js"></script>
+    <div class="text">0</div>
+    <!--팝업공지영역 -->
+
+    <div id="showimage" style="z-index:99;position:absolute;width:322px;left:50px;top:200px;">
+        <script>
+            function closeWin() {
+                var chk = document.getElementById('Notice')
+                if (chk.checked) {
+                    setCookie("Notice", "done", 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+                }
+            }
+            if (getCookie("Notice") == "done") {
+                hidebox();
+            }
+
+        </script>
+        <div> <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다."> </div>
+        <div style="font-size:12px;text-align:center;color:#666;">
+            <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자">
+            <label for="Notice">오늘은 이창을 열지 않음.</label> <a href="#" onclick="closeWin();hidebox();return false;"> [close] </a> </div>
+    </div>
+
+</body>
+
+</html>

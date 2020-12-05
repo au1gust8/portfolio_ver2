@@ -1,0 +1,88 @@
+<?
+session_start();
+@extract($_GET);
+@extract($_POST);
+@extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>한국디자인진흥원</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e49f5d3028.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub2common.css">
+    <link rel="stylesheet" href="css/content2_3.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+    <!--[if IE9]>  
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+        <? include"../common/sub_head.html" ?>
+ <? $_GET['num']=3;
+      include "common/sub_nav.html"; 
+    ?>
+        <article id="content">
+            <div class="title_area">
+                <div class="linemap"> <span>디자인의 사회적가치</span>&gt;<strong>전략과제 및 추진활동</strong></div>
+                    <h3>전략과제 및 추진활동</h3></div>
+            <!--    -->
+            <div class="content">
+            <div class="con1">
+            <h4><span>일자리창출</span><br>:일하고 싶은 디자인일자리 만들기</h4>
+            <dl> <dt>디자인분야 공공 민간 일자리 창출 확대</dt>
+                <dd>디자인 인력지원사업을 통해 기업의 경쟁력을 제고하고 디자인 산업의 활용범위 확장을 위해 노력합니다.</dd>
+                <dd>제조,스타일테크,사회적경제 기업대상 디자인인력지원,초기창업패키지 지원사업 등</dd>
+            </dl>
+            <dl> <dt>고용 및 근로의 질 개선</dt>
+                <dd>양질의 일자리 개선을 위해 공정하고 투명하게 원칙을 준수하며 조직구성원의 근로중심에서 생활과의 균형구현을 통한 일자리 가치 향상을 위해 노력합니다.</dd>
+                <dd>공공부문 일자리 확대,비정규직 근로자 정규직 전환,저출산과 여성의 경력단절,가족 간 유대감 강화,육아휴직 보장 확대 등</dd>
+            </dl>
+            <dl> <dt>미래 디자인 전문인력 양성</dt>
+                <dd>산업 현장의 수요를 반영하여 디자인 전문인력 양성 프로그램을 운영합니다.</dd>
+                <dd>코리아디자인멤버십 운영, 디자인융합 대학원 운영 등</dd>
+            </dl>
+            </div>
+            <div class="con2">
+            <h4><span>환경 안전</span><br>:안전한 사회, 지속가능한 사회를 위한 디자인</h4>
+            <dl> <dt>디자인의 특성을 반영한 재난관리 및 국민안전</dt>
+                <dd>안전한 근무환경 조성을 위하여 기관의 안전 개념을 재정비하고 인식향상을 위한 예방활동을 강화합니다.</dd>
+                <dd>기관 시설물 안전관리, 안전인식 향상을 위한 안내사인 디자인 개발</dd>
+            </dl>
+            <dl> <dt>환경보전</dt>
+                <dd>환경관련 법 규정을 준수하여 환경보전의 개념을 재정립하고이를 기반으로 기존 사업과의 연계방향을 모색하여신사업 발굴을 위해 노력합니다.</dd>
+                <dd>임직원 환경보전 활동참여, 환경보전 활동 체계 구축, 녹색제품 구매</dd>
+            </dl>
+            </div>
+            <div class="con3">
+            <h4><span>상생협력 및 사회공헌</span><br>:공유가치 창출을 위한 디자인</h4>
+            <dl> <dt>이해관계자 참여를 통한 인권경영 문화실천</dt>
+                <dd>인권경영 조직문화의 선진화를 위하여 인권경영체계를 확립하고 활동을 강화합니다.</dd>
+                <dd>인권경영위워회구성,산업안전환경권 보장 등 프로그램 개발 및 시행</dd>
+            </dl>
+            <dl> <dt>상생 협력을 통한 지역발전</dt>
+                <dd>지역사회 참여 프로그램을 개발하고 시행하여 지역경제 활성화를 도모합니다.</dd>
+                <dd>전통시장 및 소상공인 지원, 디자인 플리마켓(창업/영세기업),디자인 전식=대관, 디자인 무료웨딩 지원</dd>
+            </dl>
+            <dl> <dt>동반성장체계확립</dt>
+                <dd>중소기업의 경쟁력 확보를 위한 여건을 조성하고 지속적 성장을 위하여 노력합니다.</dd>
+                <dd>디자인거점센터를 활용한 판로지원, 창업지원센터 기반 단계별 창업지원 및 창업 활성화</dd>
+            </dl>
+            <dl> <dt>디자인산업 생태계 조성</dt>
+                <dd>디자인산업의 건강한 생태계 조성을 위하여 디자인공정거래문화를 확산합니다.</dd>
+                <dd>디자인공지증명제도, 디자인통합민원센터 운영 강화</dd>
+            </dl>
+            </div>
+            </div>
+        </article>
+ <script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/2.3scroll.js"></script>
+            <? include"../common/sub_foot.html" ?>
+                                        <div class="text">0</div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+
+#content {width: 1200px;margin: 0 auto;margin-top: 150px;margin-bottom: 185px}
+#content .title_area {position: relative}
+#content .title_area .linemap{position: absolute;top:-70px;left:30px}
+#content .title_area .linemap span{color: #666}
+#content .title_area h3{font-size:3.125em;text-align: center;margin-bottom: 150px}
+#content .title_area h3::before{content:'';display: block; border-top: 1px solid #000;width: 140px;margin: 0 auto;padding: 10px 0}
+
+.sec1{position: relative; right:0; top:-50px; opacity: 0;
+         transition: all .8s}
+.sec2{position: relative; right:0; top:-50px; opacity: 0;
+         transition: all .8s}
+.boxMove{top:0; opacity: 1}
+.text{position: fixed; right:0; top: 0;
+           font-size: 50px; z-index: 100}
+
+#content .content_area{}
+#content .content_area .his_twe{position: relative;width: 1100px;height: 740px;margin-bottom:1000px}
+#content .content_area .his_twe p{position: absolute;top: 0;right: 55%; font-size: 70px; color: #f00;width: 240px;height: 400px;float: left;text-align: right}
+#content .content_area .his_twe .line{border-left:2px solid #f00;height: 2550px;position: absolute;top: 10px;left: 55%}
+#content .content_area .his_twe ul{display: block;width: 450px;position: absolute;top: 230px;left:65%}
+#content .content_area .his_twe ul li{line-height: 3em;margin-bottom: 30px;font-size:1.50em;color:#666}
+#content .content_area .his_twe ul li span{font-weight: bold}
+#content .content_area .his_twe ul li .red{color: #f00;font-weight: bold}
+
+#content .content_area .his_nin{position: relative;width: 1100px;height: 600px;margin-bottom:300px}
+#content .content_area .his_nin p{position: absolute;top:150px;left: 65%; font-size: 70px; color: #f00;width: 236px;height: 350px;float: left}
+#content .content_area .his_nin ul{display: block;position: absolute;top:400px;right:55%}
+#content .content_area .his_nin ul li{line-height: 3em;text-align: right;margin-bottom: 30px;font-size:1.50em;color:#666}
+#content .content_area .his_nin ul li span{font-weight: bold}
+#content .content_area .his_nin ul li .red{color: #f00;font-weight: bold}

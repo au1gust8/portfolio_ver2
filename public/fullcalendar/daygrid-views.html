@@ -1,0 +1,290 @@
+<?
+session_start();
+@extract($_GET);
+@extract($_POST);
+@extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>주요사업일정</title>
+<link href='../../common/css/common.css' rel='stylesheet'>
+<link href='../lib/main.css' rel='stylesheet'>
+<link href='css/public.css' rel='stylesheet'>
+<script src='../lib/main.js'></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    
+    var to_day = new Date();
+    var to_y= to_day.getFullYear();
+    var to_m= to_day.getMonth()+1;
+    var to_d= to_day.getDate();
+      
+    if(to_d<10){
+       to_d='0'+to_d;
+    }
+    if(to_m<10){
+       to_m='0'+to_m;
+    }
+  
+    var to_full_day = to_y+'-'+to_m+'-'+to_d;   
+    console.log(to_full_day);
+      
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      headerToolbar: {
+        left: 'prevYear,prev,next,nextYear today',
+        center: 'title',
+        right: 'dayGridMonth,dayGridWeek,dayGridDay'
+      },
+      initialDate: to_full_day,
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      dayMaxEvents: true, // allow "more" link when too many events
+      events: [
+        {
+          title: '브랜드개발지원 2차과제 모집(2020년 지역 중소기업 디자인지원사업)',
+          start: '2020-11-01'
+        },
+        {
+          title: '디자인상품개발지원 과제 모집(2020년 지역 중소기업 디자인지원사업)',
+          start: '2020-11-02',
+          end: '2020-11-10'
+        },
+        {
+          groupId: 999,
+          title: '수출유망상품 토털디자인개발 지원 2차(수행기업)',
+          start: '2020-11-09T16:00:00'
+        },
+        {
+          groupId: 999,
+          title: '디자인상품개발지원 과제 모집',
+          start: '2020-11-16T16:00:00'
+        },
+        {
+          title: '2020년도 지역 중소기업 디자인지원사업의 디자인상품개발지원의 시행계획11',
+          start: '2020-11-11',
+          end: '2020-11-13'
+        },
+        {
+          title: '수출유망상품 토털디자인개발지원 과제 모집 재공고',
+          start: '2020-11-12T10:30:00',
+          end: '2020-11-12T12:30:00'
+        },
+        {
+          title: '제품디자인·브랜드 개발에 대한 원프로세스 지원',
+          start: '2020-11-12T12:00:00'
+        },
+        {
+          title: '디자인전문기업 상품개발 지원',
+          start: '2020-11-12T14:30:00'
+        },
+        {
+          title: '롯데아울렛 팝업스토어 참여공방 모집공고(1차)',
+          start: '2020-11-12T17:30:00'
+        },
+        {
+          title: '상품개발 및 양산화 지원 공방 모집공고',
+          start: '2020-11-12T20:00:00'
+        },
+        {
+          title: 'KDM 통합수료식',
+          start: '2020-11-04T07:00:00'
+        },
+        {
+          title: '산업화 디자인 프로젝트 디자인 개발 신규과제 모집공고',
+          url: 'http://google.com/',
+          start: '2020-11-28'
+        },
+        {
+          title: '광주인쇄 특화지원센터 경영자 과정 교육 모집공고',
+          url: 'http://google.com/',
+          start: '2020-11-20'
+        },
+        {
+          title: '제9회 빛고울 핸드메이드페어 참여 공방 모집공고',
+          url: 'http://google.com/',
+          start: '2020-11-14'
+        },
+        {
+          title: '오핸즈브랜드지정제모집공고',
+          url: 'http://google.com/',
+          start: '2020-11-19'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+<style>
+
+  body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  #calendar {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+</style>
+</head>
+<body>
+<div id="skipNav"> <a href="#content">본문 바로가기</a> <a href="#gnb">글로벌 네비게이션 바로가기</a> </div>
+<!--      헤더공통영역-->
+<div id="wrap">
+<header id="headerArea">
+<div class="header_inner">
+<div>
+<h1 class="logo"><a href="../../index.html">한국디자인진흥원로고</a></h1>
+<ul>
+<?
+if(!$userid) 
+{
+?>
+<li><a href="../../login/login_form.php">로그인</a></li>
+<li><a href="../../member/join.html">회원가입</a></li>
+<?
+}
+else
+{
+?>
+<li><a href="../../login/logout.php">로그아웃</a></li>
+<li><a href="../../login/member_form_modify.php">정보수정</a></li>
+<?
+}
+?>
+</ul>
+</div>
+<div class="menu_box"></div>
+<div id="header">
+<div id="gnb" class="gnb">
+<h2 class="hidden">글로벌네비게이션영역</h2>
+<ul class="dropdownmenu">
+    <li class="m1 menu">
+        <h3><a class="depth1" href="../../sub1/sub1_1.html">기관정보및사업정보</a></h3>
+        <ul>
+            <li><a href="../../sub1/sub1_1.html">인사말</a></li>
+            <li><a href="../../sub1/sub1_2.html">기관역사</a></li>
+            <li><a href="../../sub1/sub1_3.html">경영목표비전</a></li>
+            <li><a href="../../sub1/sub1_4.html">오시는 길</a></li>
+        </ul>
+    </li>
+    <li class="m2 menu">
+        <h3><a class="depth1" href="../../sub2/sub2_1.html">디자인의사회적가치</a></h3>
+        <ul>
+            <li><a href="../../sub2/sub2_1.html">추진체계</a></li>
+            <li><a href="../../sub2/sub2_2.html">사회적책임행동규범</a></li>
+            <li><a href="../../sub2/sub2_3.html">전략과제및추진활동</a></li>
+            <li><a href="../../sub2/sub2_4.html">윤리경영및인권경영</a></li>
+        </ul>
+    </li>
+    <li class="m3 menu">
+        <h3><a class="depth1" href="../sub3/sub3_1.html">통합디자인민원센터</a></h3>
+        <ul>
+            <li><a href="../../sub3/sub3_1.html">고객서비스헌장</a></li>
+            <li><a href="../../sub3/sub3_2.html">핵심서비스이행표준</a></li>
+            <li><a href="../../sub3/sub3_3.html">고객응대서비스이행표준</a></li>
+            <li><a href="../../inquiry/list.php">1:1문의</a></li>
+        </ul>
+    </li>
+    <li class="m4 menu">
+        <h3><a class="depth1" href="../../sub4/sub4_1.html">문화확산및해외시장</a></h3>
+        <ul>
+            <li><a href="../../sub4/sub4_1.html">대한민국디자인전람회</a></li>
+            <li><a href="../../sub4/sub4_2.html">한국청소년디자인전람회</a></li>
+            <li><a href="../../sub4/sub4_3.html">디자인코리아</a></li>
+            <li><a href="../../news/list.php">KIDP Main News</a></li>
+
+        </ul>
+    </li>
+    <li class="m5 menu">
+        <h3><a class="depth1" href="../../sub5/sub5_1.html">서비스디자인제조혁신</a></h3>
+        <ul>
+            <li><a href="../../sub5/sub5_1.html">서비스디자인연구</a></li>
+            <li><a href="../../sub5/sub5_2.html">국민디자인단</a></li>
+            <li class="marginb"><a href="../../sub5/sub5_3.html">서비스경험디자인기사</a></li>
+            <li class="news2"><a href="../../public/fullcalendar/daygrid-views.html">주요사업일정</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+    <div class="visual"><img src="../img/mainvisual.jpg" alt="visual image"><h2>2020 디자인공공기관 주요사업일정</h2></div>
+    <div id="calendarWrap">
+  <div id='calendar'></div>
+  </div>
+  
+     <a class="topMove" href="javascript:void(0);"><span>top</span></a>
+           <footer id="footerArea">
+            <div class="footer_inner">
+                <div class="footer_top">
+                    <img src="../../common/images/main_logo_black.png" alt="footer_logo">
+                    <ul>
+                        <li><a href="#"><span class="hidden">페이스북</span><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><span class="hidden">트위터</span><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><span class="hidden">인스타그램</span><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_left">
+                        <address>경기도 성남시 분당구 양현로 322(야탑동 344-1) 한국디자인진흥원
+                            <br>TEL 031-780-2114</address>
+                        <ul>
+                            <li><a href="#">KIDP소개</a></li>
+                            <li><a href="../../sub1/sub1_4.html">오시는길</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">영상정보운영방침</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                        </ul>    
+                       
+                    </div>
+                    <div class="footer_bottom_right">
+                        <div class="select01"> <a class="arrow01" href="#no">KIDP 주관 전람회</a>
+                    <ul class="aList01">
+                        <li><a href="https://award.kidp.or.kr/" target="_blank" title="대한민국 디자인 전람회가 새 창에 열림">대한민국 디자인 전람회</a></li>
+                        <li><a href="http://dkf.kidp.or.kr/html/ko/main.php" target="_blank" title="디자인 코리아가 새 창에 열림">디자인 코리아</a></li>
+                    </ul>
+                </div>
+                 <div class="select02"> <a class="arrow02" href="#no">유관기관</a>
+                    <ul class="aList02">
+                        <li><a href="http://www.motie.go.kr/www/main.do" target="_blank" title="산업통상자원부가 새 창에 열림">산업통상자원부</a></li>
+                        <li><a href="http://www.seouldesign.or.kr/main" target="_blank" title="서울디자인재단이 새 창에 열림">서울디자인재단</a></li>
+                        <li><a href="http://www.dcb.or.kr/main/" target="_blank" title="부산디자인진흥원이 새 창에 열림">부산디자인진흥원</a></li>
+                        <li><a href="http://www.gdc.or.kr/" target="_blank" title="광주디자인진흥원이 새 창에 열림">광주디자인진흥원</a></li>
+                    </ul>
+                </div>
+                  <div class="select03"> <a class="arrow03" href="#no">패밀리 사이트</a>
+                    <ul class="aList03">
+                        <li><a href="http://www.designdb.com/" target="_blank" title="DESIGN DB가 새 창에 열림">DESIGN DB</a></li>
+                        <li><a href="http://award.kidp.or.kr/" target="_blank" title="우수디자인(GD) 상품선정이 새 창에 열림">우수디자인(GD) 상품선정</a></li>
+                        <li><a href="http://designfirm.kidp.or.kr/" target="_blank" title="디자인전문회사가 새 창에 열림">디자인전문회사</a></li>
+                        <li><a href="http://drights.kidp.or.kr/10_Menu/main.asp" target="_blank" title="디자인권리보호가 새 창에 열림">디자인권리보호</a></li>
+                    </ul>
+                </div>
+                    </div>
+                </div>
+                
+                <p class="copy">COPYRIGHT&copy;<span class="red">KIDP</span>ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../../common/js/gnb.js"></script>
+    <script src="../../common/js/slide_move.js"></script>
+    <script src="../../common/js/jquery-1.7.1.min.js"></script>
+    <script src="../../common/js/select.js"></script>
+</body>
+
+</html>
